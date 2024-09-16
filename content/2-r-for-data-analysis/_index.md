@@ -17,7 +17,7 @@ pre = "<b>2. </b>"
 #### Data.table
 
 - subset rows
-- create cols with := operator
+- create cols with := 
 - aggregate -- args take lists
 - aggregate and merge is just one step
 - merge
