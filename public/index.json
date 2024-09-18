@@ -32,7 +32,7 @@
 	"title": "Resources",
 	"tags": [],
 	"description": "",
-	"content": "lorum ipsom\n"
+	"content": "There are a tremendous set of resources for learning R. But two excellent, free books are:\nR for Data Science by Hadley Wickham \u0026amp; Garrett Grolemund, which introduces R and the Tidyverse Advanced R by Hadley Wickham, which dives into all the gory details I would also strongly recommend\nggplot2: Elegand Graphics for Data Analysis by Hadley Wickham, Danielle navarro, and Thomas Lin Pedersen The data.table website and vignettes The Quarto website and documentation For a HUGE collection of free online resources, consult the Big Book of R compiled by Oscar Baruffa.\n"
 },
 {
 	"uri": "http://localhost:1313/",
