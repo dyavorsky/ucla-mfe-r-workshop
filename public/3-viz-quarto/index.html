@@ -12,22 +12,22 @@
     <title>Visualization &amp; Reporting :: MFE R Workshop</title>
 
     
-    <link href="/css/nucleus.css?1726588144" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726588144" rel="stylesheet">
-    <link href="/css/hybrid.css?1726588144" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726588144" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726588144" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726588144" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726588144" rel="stylesheet">
-    <link href="/css/theme.css?1726588144" rel="stylesheet">
-    <link href="/css/tabs.css?1726588144" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726588144" rel="stylesheet">
+    <link href="/css/nucleus.css?1726625363" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726625363" rel="stylesheet">
+    <link href="/css/hybrid.css?1726625363" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726625363" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726625363" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726625363" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726625363" rel="stylesheet">
+    <link href="/css/theme.css?1726625363" rel="stylesheet">
+    <link href="/css/tabs.css?1726625363" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726625363" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1726588144" rel="stylesheet">
+    <link href="/css/theme-mine.css?1726625363" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726588144"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726625363"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -355,20 +355,88 @@
 <hr>
 <h4 id="base-plots">Base Plots</h4>
 <ul>
-<li>add</li>
+<li>R has excellent plotting capabilities, but often requires lots of code to fully customize the plot</li>
+<li>Base plots are static
+<ul>
+<li>No resizing or zooming</li>
+<li>Adding elements to a plot is done by layering on top, not modifying what exists</li>
+</ul>
+</li>
+<li>You&rsquo;ll often want to change:
+<ul>
+<li>The color <code>col</code>, point character <code>pch</code>, fill color <code>fill</code>, line width <code>lwd</code>, or size via character expansion <code>cex</code></li>
+<li>The title <code>main</code>, horizonal axis label <code>xlab</code>, and vertical axis label <code>ylab</code></li>
+<li>Margins via <code>par(mar=c(...))</code></li>
+<li>Any many other features, several highlighted in these [<a href="https://towardsdatascience.com/base-plotting-in-r-eb365da06b22">article1</a>, <a href="https://www.jumpingrivers.com/blog/styling-base-r-graphics/">article2</a>]</li>
+</ul>
+</li>
+<li>Add elements to your plot with:
+<ul>
+<li><code>lines()</code>, <code>curve()</code>, <code>text()</code>, or <code>points()</code></li>
+<li>or customize the <code>axis()</code></li>
+<li>and add a <code>legend()</code></li>
+</ul>
+</li>
+<li>To combine multiple plots:
+<ul>
+<li>Use <code>par(mfrow=c(x,y))</code></li>
+<li>Control outer margins with <code>par(oma=c(...))</code></li>
+<li>Place a title via <code>title()</code></li>
+<li><code>layout()</code> offer richer arrangements of subplots</li>
+</ul>
+</li>
 </ul>
 <h4 id="ggplot2">ggplot2</h4>
 <ul>
-<li>add</li>
+<li>An introduction:
+<ul>
+<li>The ggplot2 package is Hadley Wickmham&rsquo;s implementation of a Grammar of Graphics described in Leland Wilkinson 2005 <a href="https://www.jumpingrivers.com/blog/styling-base-r-graphics/">book</a></li>
+<li>It is immensely popular, with re-implementations in Python and Julia</li>
+<li>It is powerful and expressive method of creating graphics, and well documented with a <a href="https://ggplot2.tidyverse.org/">website</a>, <a href="ggplot2-book.org">book</a>, and many other resources</li>
+</ul>
+</li>
+<li>Every ggplot involves
+<ul>
+<li>A dataset usually via <code>ggplot(data)</code></li>
+<li>Aesthetic mappings from variables in the dataset to plot elements, eg, <code>aes(x=height, y=weight)</code></li>
+<li>One or more geometric objects (eg, points in a scatterplot via <code>geom_point()</code>)</li>
+</ul>
+</li>
+<li>You&rsquo;ll often want to annotate basic elements with <code>labs()</code> such as <code>x</code>, <code>y</code>, <code>title</code>, and <code>subtitle</code></li>
+<li>More advanced aspects of the plotting system involve
+<ul>
+<li>A statistical transformation of the data</li>
+<li>A scale to control the mapping from data to aesthetic attributes</li>
+<li>A coordinate system</li>
+<li>Facets, for creating small multiples of plots</li>
+</ul>
+</li>
+<li>The theme system provides fine control over the non-data elements of the plot</li>
 </ul>
 <h4 id="quarto">Quarto</h4>
 <ul>
-<li>yaml</li>
-<li>markdown</li>
-<li>text formatting</li>
-<li>including code and output</li>
-<li>controlling code chunk behavior</li>
-<li>rendering with pandoc</li>
+<li><a href="https://quarto.org/">Quarto</a> is an open-source scientified and technical publishing system created by the team at Posit</li>
+<li>A Quarto document
+<ul>
+<li>Can by a Jupyter Notebook or a plain text .qmd file with a YAML header</li>
+<li>Consisting of Pandoc markdown and code chunks</li>
+<li>Renders to multiple output formats including PDF, MS Word, HTML</li>
+<li>Enables reproducible research and literate programming</li>
+<li>Will likely be the mode via which you compose your homework assignments</li>
+</ul>
+</li>
+<li>Pandoc markdown syntax:
+<ul>
+<li>Is quite simple and the basics can be learned in an hour</li>
+<li>Includes Latex math equations, citations, cross references, and more</li>
+</ul>
+</li>
+<li>Code chunks:
+<ul>
+<li>Begin and end with three back ticks <code>`</code></li>
+<li>Support a variety of languages, including R, Python, Julia, C++, BASH</li>
+</ul>
+</li>
 </ul>
 
 
@@ -507,19 +575,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726588144"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726588144"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726588144"></script>
-    <script src="/js/jquery.sticky.js?1726588144"></script>
-    <script src="/js/featherlight.min.js?1726588144"></script>
-    <script src="/js/highlight.pack.js?1726588144"></script>
+    <script src="/js/clipboard.min.js?1726625363"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726625363"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726625363"></script>
+    <script src="/js/jquery.sticky.js?1726625363"></script>
+    <script src="/js/featherlight.min.js?1726625363"></script>
+    <script src="/js/highlight.pack.js?1726625363"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726588144"></script>
-    <script src="/js/learn.js?1726588144"></script>
-    <script src="/js/hugo-learn.js?1726588144"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726625363"></script>
+    <script src="/js/learn.js?1726625363"></script>
+    <script src="/js/hugo-learn.js?1726625363"></script>
     
         
-            <script src="/mermaid/mermaid.js?1726588144"></script>
+            <script src="/mermaid/mermaid.js?1726625363"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

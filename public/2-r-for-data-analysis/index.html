@@ -12,22 +12,22 @@
     <title>R for Data Analysis :: MFE R Workshop</title>
 
     
-    <link href="/css/nucleus.css?1726588144" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726588144" rel="stylesheet">
-    <link href="/css/hybrid.css?1726588144" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726588144" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726588144" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726588144" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726588144" rel="stylesheet">
-    <link href="/css/theme.css?1726588144" rel="stylesheet">
-    <link href="/css/tabs.css?1726588144" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726588144" rel="stylesheet">
+    <link href="/css/nucleus.css?1726625363" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1726625363" rel="stylesheet">
+    <link href="/css/hybrid.css?1726625363" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1726625363" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1726625363" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726625363" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1726625363" rel="stylesheet">
+    <link href="/css/theme.css?1726625363" rel="stylesheet">
+    <link href="/css/tabs.css?1726625363" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1726625363" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1726588144" rel="stylesheet">
+    <link href="/css/theme-mine.css?1726625363" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1726588144"></script>
+    <script src="/js/jquery-3.3.1.min.js?1726625363"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -355,58 +355,102 @@
 <hr>
 <h4 id="datatable">Data.table</h4>
 <ul>
-<li>subset rows</li>
-<li>create cols with :=</li>
-<li>aggregate &ndash; args take lists</li>
-<li>aggregate and merge is just one step</li>
-<li>merge</li>
-<li>.N (ie, dot-N)</li>
-<li>set functions</li>
-<li>S.ubset of D.atatable (SD and .SDcols)</li>
+<li>Data Table Overview
+<ul>
+<li>Created by Matt Dowle, now maintained by others</li>
+<li>Check out its homepage <a href="https://rdatatable.gitlab.io/data.table/">here</a> and be sure to read the vignettes!</li>
+<li>Mature, stable project that provides enhancements to the Base R data.frame object</li>
+<li>Provides concise syntax that is efficient to read and write</li>
+<li>Is fast, with many operations internally parrellelized</li>
+<li>Has no dependencies other than Base R.</li>
+</ul>
+</li>
+<li>Syntax <code>dt[i,j,by]</code> matches SQL commands: where, select, group by
+<ul>
+<li><code>i</code> subsets rows, no need to refer to <code>dt$</code> or extra comma when requesting all columns in the subset, eg <code>dt[i]</code> not <code>df[df$i,]</code></li>
+<li><code>j</code> selects columns using <code>list()</code> or <code>.()</code>, or creates columns using <code>:=</code></li>
+<li>aggregation occurs when a vector of grouping variable(s) is specified in <code>by</code></li>
+<li>altogether this makes split-apply-combine a single, concise command</li>
+</ul>
+</li>
+<li><code>.SD</code> and <code>.SDcols</code> are used to operate on multiple columns</li>
+<li>Data Table also provides:
+<ul>
+<li>a set of <code>set_</code> convenience functions, my favorite is <code>set_names()</code></li>
+<li>fast data input/out with <code>fread()</code> and <code>fwrite()</code></li>
+<li>fast rolling joins</li>
+</ul>
+</li>
 </ul>
 <h4 id="tidyverse">Tidyverse</h4>
 <ul>
-<li>tibbles</li>
-<li>special print properties</li>
-<li>the &ldquo;pipe&rdquo; (cmd + shift + m)</li>
-<li>R now has a &ldquo;native&rdquo; pipe |&gt;</li>
-<li>the 5 verbs and group_by</li>
+<li>Tidyverse overview
+<ul>
+<li>Created by Hadley Wickham, now assisted by Posit team</li>
+<li>A collection of R packages that share common principles and are designed to work together seamlessly</li>
+<li>Enhanced the Base R data.frame with the tibble</li>
+<li>Two stand-out packages are <strong>dplyr</strong> for common operations with data.frames and <strong>ggplot2</strong> for plotting</li>
+<li>Tidyverse functions encourage pipe <code>|&gt;</code> operations, which make code supremely readable and beginner-programmer-friendly</li>
+<li>Pipe is <code>cmd + shift + m</code> on Mac and <code>ctrl + shift + m</code> on Windows</li>
+</ul>
+</li>
+<li>dplyr verbs for working with data.frames/tibbles:</li>
+<li>the 5 verbs and group_by
+<ul>
 <li>
 <ol>
-<li>filter() selects rows</li>
+<li><code>filter()</code> selects rows</li>
 </ol>
 </li>
 <li>
 <ol start="2">
-<li>arrange() orders by row</li>
+<li><code>arrange()</code> orders by row</li>
 </ol>
 </li>
 <li>
 <ol start="3">
-<li>select() chooses columns</li>
+<li><code>select()</code> chooses columns</li>
 </ol>
 </li>
 <li>
 <ol start="4">
-<li>mutate() creates new columns</li>
+<li><code>mutate()</code> creates new columns</li>
 </ol>
 </li>
 <li>
 <ol start="5">
-<li>summarize() with group_by() does aggregations</li>
+<li><code>summarize()</code> with <code>group_by()</code> split-apply-combine aggregations</li>
 </ol>
 </li>
-<li>reshaping data from wide to long</li>
+<li>You&rsquo;ll stumble accross other gems such as <code>distinct()</code>, <code>count()</code>, <code>sample_n()</code>, <code>transmute()</code>, <code>slice()</code>, <code>n()</code>, etc.</li>
+</ul>
+</li>
+<li>Offers the best syntax for reshaping data from wide to long (or vice-versa) with <code>pivot_wider()</code> and <code>pivot_longer()</code></li>
 </ul>
 <h4 id="functions-and-control-flow">Functions and Control Flow</h4>
 <ul>
-<li>args, formals, local scope</li>
-<li>defensive programming</li>
-<li>local v global assignment</li>
-<li>or you can use an anonymous function</li>
-<li>if, else, and ifelse</li>
-<li>with assignment</li>
-<li>loops</li>
+<li>Use the <code>function()</code> function to create your own function</li>
+<li>Functions have:
+<ul>
+<li>Formals, which are the list of arguments that control how you call the function</li>
+<li>A body, which returns the last evaluated expression or whater you put in <code>return()</code></li>
+<li>An environment, which determines scoping (ie, how the function finds the values associated with named objects)</li>
+</ul>
+</li>
+<li>There are some R-specific things to be aware of
+<ul>
+<li>Lazy evaluation</li>
+<li>Things that appear to have the same name, eg <code>fun(x=x)</code></li>
+<li>Anonymous &ldquo;lambda&rdquo; functions</li>
+</ul>
+</li>
+<li>Control Flow
+<ul>
+<li><code>if() {...} else {...}</code>, and <code>ifelse()</code></li>
+<li><code>with</code> assignment</li>
+<li>loops via <code>foreach()</code> and <code>while()</code></li>
+</ul>
+</li>
 </ul>
 
 
@@ -545,19 +589,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1726588144"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726588144"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726588144"></script>
-    <script src="/js/jquery.sticky.js?1726588144"></script>
-    <script src="/js/featherlight.min.js?1726588144"></script>
-    <script src="/js/highlight.pack.js?1726588144"></script>
+    <script src="/js/clipboard.min.js?1726625363"></script>
+    <script src="/js/perfect-scrollbar.min.js?1726625363"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1726625363"></script>
+    <script src="/js/jquery.sticky.js?1726625363"></script>
+    <script src="/js/featherlight.min.js?1726625363"></script>
+    <script src="/js/highlight.pack.js?1726625363"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726588144"></script>
-    <script src="/js/learn.js?1726588144"></script>
-    <script src="/js/hugo-learn.js?1726588144"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1726625363"></script>
+    <script src="/js/learn.js?1726625363"></script>
+    <script src="/js/hugo-learn.js?1726625363"></script>
     
         
-            <script src="/mermaid/mermaid.js?1726588144"></script>
+            <script src="/mermaid/mermaid.js?1726625363"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
