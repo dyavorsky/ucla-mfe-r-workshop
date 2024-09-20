@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/0-getting-set-up/</loc>
   </url><url>
+    <loc>http://localhost:1313/0-schedule/</loc>
+  </url><url>
     <loc>http://localhost:1313/1-r-objects/</loc>
   </url><url>
     <loc>http://localhost:1313/2-r-for-data-analysis/</loc>
