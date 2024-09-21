@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting Set Up on MFE R Workshop</title>
-    <link>http://localhost:1313/0-getting-set-up/</link>
-    <description>Recent content in Getting Set Up on MFE R Workshop</description>
+    <title>Getting Set Up :: My New Hugo Site</title>
+    <link>http://localhost:1313/0-getting-set-up/index.html</link>
+    <description>Please do the following before our first workshop session on Monday Sept 23 at 10:00am&#xA;1. Get R Download (or update to) the latest version of R (version 4.4.1) from https://cran.r-project.org/&#xA;R is a software environment for computing, data analysis, and graphics. It’s like Python, but geared toward statistical work; like Stata, but better for programming; like Julia but people actually use it; like Matlab, but free.&#xA;You are welcome to open the minimal R app once downloaded. It’s extremely basic: a single-paned window with a “&gt;” prompt. You type R commands at that prompt (e.g., 2+2 and hit enter). Using R this way works just fine, but it’s rather unfriendly.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/0-getting-set-up/index.xml" rel="self" type="application/rss+xml" />

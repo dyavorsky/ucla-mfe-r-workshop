@@ -1,54 +1,214 @@
 <!DOCTYPE html>
-<html lang="en" class="js csstransforms3d">
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.134.2">
-    <meta name="description" content="">
-<meta name="author" content="Dan Yavorsky">
-
-    <link rel="icon" href="/images/favicon.png" type="image/png">
-
-    <title>Visualization &amp; Reporting :: MFE R Workshop</title>
-
-    
-    <link href="/css/nucleus.css?1726790887" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1726790887" rel="stylesheet">
-    <link href="/css/hybrid.css?1726790887" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1726790887" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1726790887" rel="stylesheet">
-    <link href="/css/auto-complete.css?1726790887" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1726790887" rel="stylesheet">
-    <link href="/css/theme.css?1726790887" rel="stylesheet">
-    <link href="/css/tabs.css?1726790887" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1726790887" rel="stylesheet">
-    
-    <link href="/css/theme-mine.css?1726790887" rel="stylesheet">
-    
-    
-
-    <script src="/js/jquery-3.3.1.min.js?1726790887"></script>
-
-    <style>
-      :root #header + #content > #left > #rlblock_left{
-          display:none !important;
-      }
-      
-        :not(pre) > code + span.copy-to-clipboard {
-            display: none;
-        }
-      
-    </style>
-    
+    <meta name="generator" content="Relearn 6.4.0+tip">
+    <meta name="description" content="Submit Attendance: link
+Files for today: base plots | ggplot2 | quarto
+Base Plots R has excellent plotting capabilities, but often requires lots of code to fully customize the plot Base plots are static No resizing or zooming Adding elements to a plot is done by layering on top, not modifying what exists You’ll often want to change: The color col, point character pch, fill color fill, line width lwd, or size via character expansion cex The title main, horizonal axis label xlab, and vertical axis label ylab Margins via par(mar=c(...)) Any many other features, several highlighted in these [article1, article2] Add elements to your plot with: lines(), curve(), text(), or points() or customize the axis() and add a legend() To combine multiple plots: Use par(mfrow=c(x,y)) Control outer margins with par(oma=c(...)) Place a title via title() layout() offer richer arrangements of subplots ggplot2 An introduction: The ggplot2 package is Hadley Wickmham’s implementation of a Grammar of Graphics described in Leland Wilkinson 2005 book It is immensely popular, with re-implementations in Python and Julia It is powerful and expressive method of creating graphics, and well documented with a website, book, and many other resources Every ggplot involves A dataset usually via ggplot(data) Aesthetic mappings from variables in the dataset to plot elements, eg, aes(x=height, y=weight) One or more geometric objects (eg, points in a scatterplot via geom_point()) You’ll often want to annotate basic elements with labs() such as x, y, title, and subtitle More advanced aspects of the plotting system involve A statistical transformation of the data A scale to control the mapping from data to aesthetic attributes A coordinate system Facets, for creating small multiples of plots The theme system provides fine control over the non-data elements of the plot Quarto Quarto is an open-source scientified and technical publishing system created by the team at Posit A Quarto document Can by a Jupyter Notebook or a plain text .qmd file with a YAML header Consisting of Pandoc markdown and code chunks Renders to multiple output formats including PDF, MS Word, HTML Enables reproducible research and literate programming Will likely be the mode via which you compose your homework assignments Pandoc markdown syntax: Is quite simple and the basics can be learned in an hour Includes Latex math equations, citations, cross references, and more Code chunks: Begin and end with three back ticks ` Support a variety of languages, including R, Python, Julia, C&#43;&#43;, BASH">
+    <meta name="author" content="Dan Yavorsky">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Visualization & Reporting :: My New Hugo Site">
+    <meta name="twitter:description" content="Submit Attendance: link
+Files for today: base plots | ggplot2 | quarto
+Base Plots R has excellent plotting capabilities, but often requires lots of code to fully customize the plot Base plots are static No resizing or zooming Adding elements to a plot is done by layering on top, not modifying what exists You’ll often want to change: The color col, point character pch, fill color fill, line width lwd, or size via character expansion cex The title main, horizonal axis label xlab, and vertical axis label ylab Margins via par(mar=c(...)) Any many other features, several highlighted in these [article1, article2] Add elements to your plot with: lines(), curve(), text(), or points() or customize the axis() and add a legend() To combine multiple plots: Use par(mfrow=c(x,y)) Control outer margins with par(oma=c(...)) Place a title via title() layout() offer richer arrangements of subplots ggplot2 An introduction: The ggplot2 package is Hadley Wickmham’s implementation of a Grammar of Graphics described in Leland Wilkinson 2005 book It is immensely popular, with re-implementations in Python and Julia It is powerful and expressive method of creating graphics, and well documented with a website, book, and many other resources Every ggplot involves A dataset usually via ggplot(data) Aesthetic mappings from variables in the dataset to plot elements, eg, aes(x=height, y=weight) One or more geometric objects (eg, points in a scatterplot via geom_point()) You’ll often want to annotate basic elements with labs() such as x, y, title, and subtitle More advanced aspects of the plotting system involve A statistical transformation of the data A scale to control the mapping from data to aesthetic attributes A coordinate system Facets, for creating small multiples of plots The theme system provides fine control over the non-data elements of the plot Quarto Quarto is an open-source scientified and technical publishing system created by the team at Posit A Quarto document Can by a Jupyter Notebook or a plain text .qmd file with a YAML header Consisting of Pandoc markdown and code chunks Renders to multiple output formats including PDF, MS Word, HTML Enables reproducible research and literate programming Will likely be the mode via which you compose your homework assignments Pandoc markdown syntax: Is quite simple and the basics can be learned in an hour Includes Latex math equations, citations, cross references, and more Code chunks: Begin and end with three back ticks ` Support a variety of languages, including R, Python, Julia, C&#43;&#43;, BASH">
+    <meta property="og:url" content="http://localhost:1313/3-viz-quarto/index.html">
+    <meta property="og:site_name" content="My New Hugo Site">
+    <meta property="og:title" content="Visualization & Reporting :: My New Hugo Site">
+    <meta property="og:description" content="Submit Attendance: link
+Files for today: base plots | ggplot2 | quarto
+Base Plots R has excellent plotting capabilities, but often requires lots of code to fully customize the plot Base plots are static No resizing or zooming Adding elements to a plot is done by layering on top, not modifying what exists You’ll often want to change: The color col, point character pch, fill color fill, line width lwd, or size via character expansion cex The title main, horizonal axis label xlab, and vertical axis label ylab Margins via par(mar=c(...)) Any many other features, several highlighted in these [article1, article2] Add elements to your plot with: lines(), curve(), text(), or points() or customize the axis() and add a legend() To combine multiple plots: Use par(mfrow=c(x,y)) Control outer margins with par(oma=c(...)) Place a title via title() layout() offer richer arrangements of subplots ggplot2 An introduction: The ggplot2 package is Hadley Wickmham’s implementation of a Grammar of Graphics described in Leland Wilkinson 2005 book It is immensely popular, with re-implementations in Python and Julia It is powerful and expressive method of creating graphics, and well documented with a website, book, and many other resources Every ggplot involves A dataset usually via ggplot(data) Aesthetic mappings from variables in the dataset to plot elements, eg, aes(x=height, y=weight) One or more geometric objects (eg, points in a scatterplot via geom_point()) You’ll often want to annotate basic elements with labs() such as x, y, title, and subtitle More advanced aspects of the plotting system involve A statistical transformation of the data A scale to control the mapping from data to aesthetic attributes A coordinate system Facets, for creating small multiples of plots The theme system provides fine control over the non-data elements of the plot Quarto Quarto is an open-source scientified and technical publishing system created by the team at Posit A Quarto document Can by a Jupyter Notebook or a plain text .qmd file with a YAML header Consisting of Pandoc markdown and code chunks Renders to multiple output formats including PDF, MS Word, HTML Enables reproducible research and literate programming Will likely be the mode via which you compose your homework assignments Pandoc markdown syntax: Is quite simple and the basics can be learned in an hour Includes Latex math equations, citations, cross references, and more Code chunks: Begin and end with three back ticks ` Support a variety of languages, including R, Python, Julia, C&#43;&#43;, BASH">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Visualization & Reporting :: My New Hugo Site">
+    <meta itemprop="description" content="Submit Attendance: link
+Files for today: base plots | ggplot2 | quarto
+Base Plots R has excellent plotting capabilities, but often requires lots of code to fully customize the plot Base plots are static No resizing or zooming Adding elements to a plot is done by layering on top, not modifying what exists You’ll often want to change: The color col, point character pch, fill color fill, line width lwd, or size via character expansion cex The title main, horizonal axis label xlab, and vertical axis label ylab Margins via par(mar=c(...)) Any many other features, several highlighted in these [article1, article2] Add elements to your plot with: lines(), curve(), text(), or points() or customize the axis() and add a legend() To combine multiple plots: Use par(mfrow=c(x,y)) Control outer margins with par(oma=c(...)) Place a title via title() layout() offer richer arrangements of subplots ggplot2 An introduction: The ggplot2 package is Hadley Wickmham’s implementation of a Grammar of Graphics described in Leland Wilkinson 2005 book It is immensely popular, with re-implementations in Python and Julia It is powerful and expressive method of creating graphics, and well documented with a website, book, and many other resources Every ggplot involves A dataset usually via ggplot(data) Aesthetic mappings from variables in the dataset to plot elements, eg, aes(x=height, y=weight) One or more geometric objects (eg, points in a scatterplot via geom_point()) You’ll often want to annotate basic elements with labs() such as x, y, title, and subtitle More advanced aspects of the plotting system involve A statistical transformation of the data A scale to control the mapping from data to aesthetic attributes A coordinate system Facets, for creating small multiples of plots The theme system provides fine control over the non-data elements of the plot Quarto Quarto is an open-source scientified and technical publishing system created by the team at Posit A Quarto document Can by a Jupyter Notebook or a plain text .qmd file with a YAML header Consisting of Pandoc markdown and code chunks Renders to multiple output formats including PDF, MS Word, HTML Enables reproducible research and literate programming Will likely be the mode via which you compose your homework assignments Pandoc markdown syntax: Is quite simple and the basics can be learned in an hour Includes Latex math equations, citations, cross references, and more Code chunks: Begin and end with three back ticks ` Support a variety of languages, including R, Python, Julia, C&#43;&#43;, BASH">
+    <meta itemprop="wordCount" content="404">
+    <title>Visualization &amp; Reporting :: My New Hugo Site</title>
+    <link href="/3-viz-quarto/index.xml" rel="alternate" type="application/rss+xml" title="Visualization &amp; Reporting :: My New Hugo Site">
+    <link href="/images/favicon.png?1726951892" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1726951892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1726951892" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1726951892" rel="stylesheet">
+    <link href="/css/auto-complete.css?1726951892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1726951892" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1726951892" rel="stylesheet">
+    <link href="/css/fonts.css?1726951892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1726951892" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1726951892" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1726951892" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1726951892" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1726951892" rel="stylesheet">
+    <link href="/css/print.css?1726951892" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1726951892"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=true;
+      window.relearn.disableAnchorScrolling=true;
+      // variant stuff
+      window.variants && variants.init( [ 'zen-auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
   </head>
-  <body class="" data-url="/3-viz-quarto/">
-    <nav id="sidebar" class="">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/3-viz-quarto/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Home</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Visualization &amp; Reporting</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/2-r-for-data-analysis/index.html" title="R for Data Analysis (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/9-resources/index.html" title="Resources (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
 
+<h1 id="visualization--reporting">Visualization &amp; Reporting</h1>
 
+<p><strong>Submit Attendance:</strong> <a href="https://bruinlearn.ucla.edu/courses/144052/quizzes/1035789" rel="external" target="_blank">link</a></p>
+<p><strong>Files for today:</strong>
+<a href="https://www.dropbox.com/scl/fi/7oo01inpl2hq199qo7yh0/code8-base-plots.R?rlkey=0uj2w1kzq4x1cy9bw41teibli&st=uuwvoudv&dl=1" rel="external" target="_blank">base plots</a> |
+<a href="https://www.dropbox.com/scl/fi/dmok0p5ltte4pis7rhn05/code9-ggplot.R?rlkey=470lynkzgar4sinrj288lz2q5&st=9liktlnh&dl=1" rel="external" target="_blank">ggplot2</a> |
+<a href="https://www.dropbox.com/scl/fi/fpr2uc4yyncu9ljgrhrg6/code10-quarto.qmd?rlkey=972sgkdr7jqi2m8va0x21dvua&st=6r0xmtyk&dl=1" rel="external" target="_blank">quarto</a></p>
+<hr>
+<h4 id="base-plots">Base Plots</h4>
+<ul>
+<li>R has excellent plotting capabilities, but often requires lots of code to fully customize the plot</li>
+<li>Base plots are static
+<ul>
+<li>No resizing or zooming</li>
+<li>Adding elements to a plot is done by layering on top, not modifying what exists</li>
+</ul>
+</li>
+<li>You&rsquo;ll often want to change:
+<ul>
+<li>The color <code>col</code>, point character <code>pch</code>, fill color <code>fill</code>, line width <code>lwd</code>, or size via character expansion <code>cex</code></li>
+<li>The title <code>main</code>, horizonal axis label <code>xlab</code>, and vertical axis label <code>ylab</code></li>
+<li>Margins via <code>par(mar=c(...))</code></li>
+<li>Any many other features, several highlighted in these [<a href="https://towardsdatascience.com/base-plotting-in-r-eb365da06b22" rel="external" target="_blank">article1</a>, <a href="https://www.jumpingrivers.com/blog/styling-base-r-graphics/" rel="external" target="_blank">article2</a>]</li>
+</ul>
+</li>
+<li>Add elements to your plot with:
+<ul>
+<li><code>lines()</code>, <code>curve()</code>, <code>text()</code>, or <code>points()</code></li>
+<li>or customize the <code>axis()</code></li>
+<li>and add a <code>legend()</code></li>
+</ul>
+</li>
+<li>To combine multiple plots:
+<ul>
+<li>Use <code>par(mfrow=c(x,y))</code></li>
+<li>Control outer margins with <code>par(oma=c(...))</code></li>
+<li>Place a title via <code>title()</code></li>
+<li><code>layout()</code> offer richer arrangements of subplots</li>
+</ul>
+</li>
+</ul>
+<h4 id="ggplot2">ggplot2</h4>
+<ul>
+<li>An introduction:
+<ul>
+<li>The ggplot2 package is Hadley Wickmham&rsquo;s implementation of a Grammar of Graphics described in Leland Wilkinson 2005 <a href="https://www.jumpingrivers.com/blog/styling-base-r-graphics/" rel="external" target="_blank">book</a></li>
+<li>It is immensely popular, with re-implementations in Python and Julia</li>
+<li>It is powerful and expressive method of creating graphics, and well documented with a <a href="https://ggplot2.tidyverse.org/" rel="external" target="_blank">website</a>, <a href="ggplot2-book.org">book</a>, and many other resources</li>
+</ul>
+</li>
+<li>Every ggplot involves
+<ul>
+<li>A dataset usually via <code>ggplot(data)</code></li>
+<li>Aesthetic mappings from variables in the dataset to plot elements, eg, <code>aes(x=height, y=weight)</code></li>
+<li>One or more geometric objects (eg, points in a scatterplot via <code>geom_point()</code>)</li>
+</ul>
+</li>
+<li>You&rsquo;ll often want to annotate basic elements with <code>labs()</code> such as <code>x</code>, <code>y</code>, <code>title</code>, and <code>subtitle</code></li>
+<li>More advanced aspects of the plotting system involve
+<ul>
+<li>A statistical transformation of the data</li>
+<li>A scale to control the mapping from data to aesthetic attributes</li>
+<li>A coordinate system</li>
+<li>Facets, for creating small multiples of plots</li>
+</ul>
+</li>
+<li>The theme system provides fine control over the non-data elements of the plot</li>
+</ul>
+<h4 id="quarto">Quarto</h4>
+<ul>
+<li><a href="https://quarto.org/" rel="external" target="_blank">Quarto</a> is an open-source scientified and technical publishing system created by the team at Posit</li>
+<li>A Quarto document
+<ul>
+<li>Can by a Jupyter Notebook or a plain text .qmd file with a YAML header</li>
+<li>Consisting of Pandoc markdown and code chunks</li>
+<li>Renders to multiple output formats including PDF, MS Word, HTML</li>
+<li>Enables reproducible research and literate programming</li>
+<li>Will likely be the mode via which you compose your homework assignments</li>
+</ul>
+</li>
+<li>Pandoc markdown syntax:
+<ul>
+<li>Is quite simple and the basics can be learned in an hour</li>
+<li>Includes Latex math equations, citations, cross references, and more</li>
+</ul>
+</li>
+<li>Code chunks:
+<ul>
+<li>Begin and end with three back ticks <code>`</code></li>
+<li>Support a variety of languages, including R, Python, Julia, C++, BASH</li>
+</ul>
+</li>
+</ul>
 
-  <div id="header-wrapper">
-    <div id="header">
-      
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 202.39 44" style="enable-background:new 0 0 202.39 44;" xml:space="preserve">
@@ -57,6 +217,7 @@
 	.st1{display:inline;fill:none;stroke:#231F20;stroke-width:10;stroke-miterlimit:10;}
 	.st2{fill:#107BB6;}
 	.st3{fill:#FFFFFF;}
+	.st4{fill:#777777;}
 </style>
 <g id="White_Boxed">
 	<g id="labels_2_" class="st0">
@@ -101,26 +262,26 @@
 		</g>
 		<g>
 			<g>
-				<path class="st3" d="M106.28,12.93h3.64l6.11,17.34h-3.66l-1.16-3.69h-6.26l-1.14,3.69h-3.56L106.28,12.93z M105.77,23.88h4.58
+				<path class="st4" d="M106.28,12.93h3.64l6.11,17.34h-3.66l-1.16-3.69h-6.26l-1.14,3.69h-3.56L106.28,12.93z M105.77,23.88h4.58
 					l-1.55-4.99c-0.29-0.92-0.7-2.67-0.7-2.67h-0.05c0,0-0.44,1.75-0.73,2.67L105.77,23.88z"/>
-				<path class="st3" d="M120.29,19.52h0.07c0.85-1.33,1.99-2.04,3.69-2.04c2.57,0,4.29,1.94,4.29,4.66v8.12h-3.3v-7.64
+				<path class="st4" d="M120.29,19.52h0.07c0.85-1.33,1.99-2.04,3.69-2.04c2.57,0,4.29,1.94,4.29,4.66v8.12h-3.3v-7.64
 					c0-1.33-0.78-2.28-2.16-2.28c-1.46,0-2.52,1.16-2.52,2.86v7.06h-3.3V17.82h3.22V19.52z"/>
-				<path class="st3" d="M129.78,24.05c0-3.88,2.21-6.57,5.31-6.57c1.75,0,2.84,0.8,3.52,1.84h0.07v-6.4h3.3v17.34h-3.18v-1.62
+				<path class="st4" d="M129.78,24.05c0-3.88,2.21-6.57,5.31-6.57c1.75,0,2.84,0.8,3.52,1.84h0.07v-6.4h3.3v17.34h-3.18v-1.62
 					h-0.05c-0.73,1.19-1.96,1.99-3.71,1.99C131.91,30.62,129.78,28.08,129.78,24.05z M138.75,24.13c0-2.38-0.78-3.98-2.89-3.98
 					c-1.82,0-2.74,1.6-2.74,3.9c0,2.4,0.95,3.81,2.64,3.81C137.73,27.86,138.75,26.41,138.75,24.13z"/>
-				<path class="st3" d="M143.46,24.03c0-3.69,2.5-6.55,6.13-6.55c4,0,6.13,3.05,6.13,7.49h-9.02c0.24,1.92,1.31,3.1,3.18,3.1
+				<path class="st4" d="M143.46,24.03c0-3.69,2.5-6.55,6.13-6.55c4,0,6.13,3.05,6.13,7.49h-9.02c0.24,1.92,1.31,3.1,3.18,3.1
 					c1.29,0,2.04-0.58,2.4-1.53h3.25c-0.46,2.21-2.42,4.07-5.62,4.07C145.79,30.62,143.46,27.74,143.46,24.03z M146.76,22.7h5.53
 					c-0.1-1.58-1.14-2.67-2.64-2.67C147.89,20.03,147.05,21.07,146.76,22.7z"/>
-				<path class="st3" d="M160.39,19.81h0.07c0.75-1.41,1.6-2.13,3.05-2.13c0.36,0,0.58,0.02,0.78,0.1v2.88h-0.07
+				<path class="st4" d="M160.39,19.81h0.07c0.75-1.41,1.6-2.13,3.05-2.13c0.36,0,0.58,0.02,0.78,0.1v2.88h-0.07
 					c-2.16-0.22-3.71,0.92-3.71,3.54v6.06h-3.3V17.82h3.18V19.81z"/>
-				<path class="st3" d="M164.81,26.24h3.05c0.22,1.43,1.24,2.06,2.71,2.06c1.46,0,2.28-0.56,2.28-1.43c0-1.19-1.58-1.31-3.27-1.65
+				<path class="st4" d="M164.81,26.24h3.05c0.22,1.43,1.24,2.06,2.71,2.06c1.46,0,2.28-0.56,2.28-1.43c0-1.19-1.58-1.31-3.27-1.65
 					c-2.23-0.44-4.41-1.04-4.41-3.76c0-2.69,2.23-3.98,5.07-3.98c3.27,0,5.09,1.62,5.33,4.12h-2.98c-0.15-1.33-0.99-1.82-2.4-1.82
 					c-1.29,0-2.13,0.49-2.13,1.38c0,1.07,1.65,1.16,3.42,1.53c2.08,0.44,4.39,1.02,4.39,3.93c0,2.5-2.13,4-5.24,4
 					C167.02,30.62,165.01,28.88,164.81,26.24z"/>
-				<path class="st3" d="M176.63,24.05c0-3.71,2.64-6.57,6.5-6.57c3.86,0,6.5,2.86,6.5,6.57s-2.64,6.57-6.5,6.57
+				<path class="st4" d="M176.63,24.05c0-3.71,2.64-6.57,6.5-6.57c3.86,0,6.5,2.86,6.5,6.57s-2.64,6.57-6.5,6.57
 					C179.28,30.62,176.63,27.76,176.63,24.05z M186.29,24.05c0-2.42-1.14-4.07-3.15-4.07c-2.04,0-3.15,1.65-3.15,4.07
 					s1.12,4.05,3.15,4.05C185.15,28.1,186.29,26.48,186.29,24.05z"/>
-				<path class="st3" d="M194.34,19.52h0.07c0.85-1.33,1.99-2.04,3.69-2.04c2.57,0,4.29,1.94,4.29,4.66v8.12h-3.3v-7.64
+				<path class="st4" d="M194.34,19.52h0.07c0.85-1.33,1.99-2.04,3.69-2.04c2.57,0,4.29,1.94,4.29,4.66v8.12h-3.3v-7.64
 					c0-1.33-0.78-2.28-2.16-2.28c-1.45,0-2.52,1.16-2.52,2.86v7.06h-3.3V17.82h3.22V19.52z"/>
 			</g>
 		</g>
@@ -130,510 +291,74 @@
 </g>
 </svg>
 
-    </div>
-    
-  </div>
-  
-
-    <div class="highlightable">
-    <ul class="topics">
-
-        
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/0-getting-set-up/" title="Getting Set Up" class="dd-item
-        
-        
-        
-        ">
-      <a href="/0-getting-set-up/">
-          Getting Set Up
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/0-schedule/" title="Schedule" class="dd-item
-        
-        
-        
-        ">
-      <a href="/0-schedule/">
-          Schedule
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-r-objects/" title="R Fundamentals" class="dd-item
-        
-        
-        
-        ">
-      <a href="/1-r-objects/">
-          <b>1. </b>R Fundamentals
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/2-r-for-data-analysis/" title="R for Data Analysis" class="dd-item
-        
-        
-        
-        ">
-      <a href="/2-r-for-data-analysis/">
-          <b>2. </b>R for Data Analysis
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/3-viz-quarto/" title="Visualization &amp; Reporting" class="dd-item
-        
-        active
-        
-        ">
-      <a href="/3-viz-quarto/">
-          <b>3. </b>Visualization &amp; Reporting
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/9-resources/" title="Resources" class="dd-item
-        
-        
-        
-        ">
-      <a href="/9-resources/">
-          Resources
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-          
-        
-    </ul>
-
-    
-    
-
-    
-    <section id="footer">
-      <p>Built with <a href="https://gohugo.io/">Hugo</a> and theme <a href="https://github.com/matcornic/hugo-theme-learn">Learn</a></p>
-
-    </section>
-  </div>
-</nav>
-
-
-
-
-        <section id="body">
-        <div id="overlay"></div>
-        <div class="padding highlightable">
-              
-              <div>
-                <div id="top-bar">
-                
-                
-                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                    <span id="sidebar-toggle-span">
-                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
-                          <i class="fas fa-bars"></i>
-                        </a>
-                    </span>
-                  
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
-                  
-                  <span class="links">
-                 
-                 
-                    
-          
-          
-            
-            
-          
-          
-            <a href='/'>Home</a> > Visualization & Reporting
-          
-        
-          
-        
-                 
-                  </span>
-                </div>
-                
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-</div>
-
-                
-              </div>
-            </div>
-            
-        <div id="head-tags">
-        
         </div>
-        
-        <div id="body-inner">
-          
-            <h1>
-              
-              Visualization &amp; Reporting
-            </h1>
-          
-
-        
-
-
-
-	<p><strong>Submit Attendance:</strong> <a href="https://bruinlearn.ucla.edu/courses/144052/quizzes/1035789">link</a></p>
-<p><strong>Files for today:</strong>
-<a href="https://www.dropbox.com/scl/fi/7oo01inpl2hq199qo7yh0/code8-base-plots.R?rlkey=0uj2w1kzq4x1cy9bw41teibli&amp;st=uuwvoudv&amp;dl=1">base plots</a> |
-<a href="https://www.dropbox.com/scl/fi/dmok0p5ltte4pis7rhn05/code9-ggplot.R?rlkey=470lynkzgar4sinrj288lz2q5&amp;st=9liktlnh&amp;dl=1">ggplot2</a> |
-<a href="https://www.dropbox.com/scl/fi/fpr2uc4yyncu9ljgrhrg6/code10-quarto.qmd?rlkey=972sgkdr7jqi2m8va0x21dvua&amp;st=6r0xmtyk&amp;dl=1">quarto</a></p>
-<hr>
-<h4 id="base-plots">Base Plots</h4>
-<ul>
-<li>R has excellent plotting capabilities, but often requires lots of code to fully customize the plot</li>
-<li>Base plots are static
-<ul>
-<li>No resizing or zooming</li>
-<li>Adding elements to a plot is done by layering on top, not modifying what exists</li>
-</ul>
-</li>
-<li>You&rsquo;ll often want to change:
-<ul>
-<li>The color <code>col</code>, point character <code>pch</code>, fill color <code>fill</code>, line width <code>lwd</code>, or size via character expansion <code>cex</code></li>
-<li>The title <code>main</code>, horizonal axis label <code>xlab</code>, and vertical axis label <code>ylab</code></li>
-<li>Margins via <code>par(mar=c(...))</code></li>
-<li>Any many other features, several highlighted in these [<a href="https://towardsdatascience.com/base-plotting-in-r-eb365da06b22">article1</a>, <a href="https://www.jumpingrivers.com/blog/styling-base-r-graphics/">article2</a>]</li>
-</ul>
-</li>
-<li>Add elements to your plot with:
-<ul>
-<li><code>lines()</code>, <code>curve()</code>, <code>text()</code>, or <code>points()</code></li>
-<li>or customize the <code>axis()</code></li>
-<li>and add a <code>legend()</code></li>
-</ul>
-</li>
-<li>To combine multiple plots:
-<ul>
-<li>Use <code>par(mfrow=c(x,y))</code></li>
-<li>Control outer margins with <code>par(oma=c(...))</code></li>
-<li>Place a title via <code>title()</code></li>
-<li><code>layout()</code> offer richer arrangements of subplots</li>
-</ul>
-</li>
-</ul>
-<h4 id="ggplot2">ggplot2</h4>
-<ul>
-<li>An introduction:
-<ul>
-<li>The ggplot2 package is Hadley Wickmham&rsquo;s implementation of a Grammar of Graphics described in Leland Wilkinson 2005 <a href="https://www.jumpingrivers.com/blog/styling-base-r-graphics/">book</a></li>
-<li>It is immensely popular, with re-implementations in Python and Julia</li>
-<li>It is powerful and expressive method of creating graphics, and well documented with a <a href="https://ggplot2.tidyverse.org/">website</a>, <a href="ggplot2-book.org">book</a>, and many other resources</li>
-</ul>
-</li>
-<li>Every ggplot involves
-<ul>
-<li>A dataset usually via <code>ggplot(data)</code></li>
-<li>Aesthetic mappings from variables in the dataset to plot elements, eg, <code>aes(x=height, y=weight)</code></li>
-<li>One or more geometric objects (eg, points in a scatterplot via <code>geom_point()</code>)</li>
-</ul>
-</li>
-<li>You&rsquo;ll often want to annotate basic elements with <code>labs()</code> such as <code>x</code>, <code>y</code>, <code>title</code>, and <code>subtitle</code></li>
-<li>More advanced aspects of the plotting system involve
-<ul>
-<li>A statistical transformation of the data</li>
-<li>A scale to control the mapping from data to aesthetic attributes</li>
-<li>A coordinate system</li>
-<li>Facets, for creating small multiples of plots</li>
-</ul>
-</li>
-<li>The theme system provides fine control over the non-data elements of the plot</li>
-</ul>
-<h4 id="quarto">Quarto</h4>
-<ul>
-<li><a href="https://quarto.org/">Quarto</a> is an open-source scientified and technical publishing system created by the team at Posit</li>
-<li>A Quarto document
-<ul>
-<li>Can by a Jupyter Notebook or a plain text .qmd file with a YAML header</li>
-<li>Consisting of Pandoc markdown and code chunks</li>
-<li>Renders to multiple output formats including PDF, MS Word, HTML</li>
-<li>Enables reproducible research and literate programming</li>
-<li>Will likely be the mode via which you compose your homework assignments</li>
-</ul>
-</li>
-<li>Pandoc markdown syntax:
-<ul>
-<li>Is quite simple and the basics can be learned in an hour</li>
-<li>Includes Latex math equations, citations, cross references, and more</li>
-</ul>
-</li>
-<li>Code chunks:
-<ul>
-<li>Begin and end with three back ticks <code>`</code></li>
-<li>Support a variety of languages, including R, Python, Julia, C++, BASH</li>
-</ul>
-</li>
-</ul>
-
-
-
-
-
-<footer class=" footline" >
-	
-</footer>
-
-        
-        </div>
-        
-
       </div>
+      <div id="R-homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/0-getting-set-up/index.html" class=""><a class="padding" href="/0-getting-set-up/index.html">Getting Set Up</a></li>
+          <li data-nav-id="/0-schedule/index.html" class=""><a class="padding" href="/0-schedule/index.html">Schedule</a></li>
+          <li data-nav-id="/1-r-objects/index.html" class=""><a class="padding" href="/1-r-objects/index.html"><b>1. </b>R Fundamentals</a></li>
+          <li data-nav-id="/2-r-for-data-analysis/index.html" class=""><a class="padding" href="/2-r-for-data-analysis/index.html"><b>2. </b>R for Data Analysis</a></li>
+          <li data-nav-id="/3-viz-quarto/index.html" class="active"><a class="padding" href="/3-viz-quarto/index.html"><b>3. </b>Visualization &amp; Reporting</a></li>
+          <li data-nav-id="/9-resources/index.html" class=""><a class="padding" href="/9-resources/index.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/3-viz-quarto/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-zen-auto" value="zen-auto" selected>Zen Light/Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter"><p>Built with <a href="https://gohugo.io/">Hugo</a> and theme <a href="hhttps://mcshelby.github.io/hugo-theme-relearn/index.html">Relearn</a></p>
 
-    <div id="navigation">
-        
-        
-
-        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-
-        
-
-
-	 
-	 
-    </div>
-
-    </section>
-
-    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
-      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
-    </div>
-    <script src="/js/clipboard.min.js?1726790887"></script>
-    <script src="/js/perfect-scrollbar.min.js?1726790887"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1726790887"></script>
-    <script src="/js/jquery.sticky.js?1726790887"></script>
-    <script src="/js/featherlight.min.js?1726790887"></script>
-    <script src="/js/highlight.pack.js?1726790887"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1726790887"></script>
-    <script src="/js/learn.js?1726790887"></script>
-    <script src="/js/hugo-learn.js?1726790887"></script>
-    
-        
-            <script src="/mermaid/mermaid.js?1726790887"></script>
-        
-        <script>
-            mermaid.initialize({ startOnLoad: true });
-        </script>
-    
-    
-
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1726951892" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1726951892" defer></script>
+    <script src="/js/theme.js?1726951892" defer></script>
   </body>
 </html>

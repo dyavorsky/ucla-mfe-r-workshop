@@ -1,24 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/0-getting-set-up/</loc>
-  </url><url>
-    <loc>http://localhost:1313/0-schedule/</loc>
-  </url><url>
-    <loc>http://localhost:1313/1-r-objects/</loc>
-  </url><url>
-    <loc>http://localhost:1313/2-r-for-data-analysis/</loc>
-  </url><url>
-    <loc>http://localhost:1313/3-viz-quarto/</loc>
-  </url><url>
-    <loc>http://localhost:1313/9-resources/</loc>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/0-getting-set-up/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/0-schedule/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/1-r-objects/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/2-r-for-data-analysis/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/3-viz-quarto/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/9-resources/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/index.html</loc>
     <lastmod>2024-09-14T21:56:45-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/index.html</loc>
   </url>
 </urlset>

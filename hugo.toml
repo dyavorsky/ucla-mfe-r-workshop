@@ -1,20 +1,20 @@
-baseURL = "https://example.org/"
-languageCode = "en-us"
-title = "MFE R Workshop"
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'hugo-theme-relearn'
 
-# Theme to be use when building the site with Hugo
-theme = 'hugo-theme-learn'
-
-# For search functionality
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
-
-# global site parameters
 [params]
-  editURL = ""
-  author = "Dan Yavorsky"
-  themeVariant = "mine"
-  disableSearch = true
-  disableInlineCopyToClipBoard = true
-  disableNextPrev = true
-  disableLandingPageButton = true
+    disableSearch = true
+    disableLandingPageButton = true
+    ordersectionsby = "weight"
+    disableInlineCopyToClipBoard = true
+    disableAnchorCopy = true
+    disableAnchorScrolling = true
+
+[params.author]
+    name = 'Dan Yavorsky'
+
+[[params.themeVariant]]
+    auto = ['zen-light', 'zen-dark']
+    identifier = 'zen-auto'
+    name = 'Zen Light/Dark'

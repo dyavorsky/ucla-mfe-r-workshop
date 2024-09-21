@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resources on MFE R Workshop</title>
-    <link>http://localhost:1313/9-resources/</link>
-    <description>Recent content in Resources on MFE R Workshop</description>
+    <title>Resources :: My New Hugo Site</title>
+    <link>http://localhost:1313/9-resources/index.html</link>
+    <description>There are a tremendous set of resources for learning R. But two excellent, free books are:&#xA;R for Data Science by Hadley Wickham &amp; Garrett Grolemund, which introduces R and the Tidyverse Advanced R by Hadley Wickham, which dives into all the gory details I would also strongly recommend&#xA;ggplot2: Elegand Graphics for Data Analysis by Hadley Wickham, Danielle navarro, and Thomas Lin Pedersen The data.table website and vignettes The Quarto website and documentation For a HUGE collection of free online resources, consult the Big Book of R compiled by Oscar Baruffa.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/9-resources/index.xml" rel="self" type="application/rss+xml" />

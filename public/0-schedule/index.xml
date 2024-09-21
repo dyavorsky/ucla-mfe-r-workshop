@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Schedule on MFE R Workshop</title>
-    <link>http://localhost:1313/0-schedule/</link>
-    <description>Recent content in Schedule on MFE R Workshop</description>
+    <title>Schedule :: My New Hugo Site</title>
+    <link>http://localhost:1313/0-schedule/index.html</link>
+    <description>Date Time Room Mon Sept 23 10:00a - 2:30p G304 Tues Sept 24 3:00p - 7:00p G304 Wed Sept 25 10:00a - 2:30p G304 Please bring your laptops!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/0-schedule/index.xml" rel="self" type="application/rss+xml" />
