@@ -49,7 +49,7 @@ LaTeX is a markup language that enables us, among other things, to write fancy m
 
 ```
 install.packages('tinytex')
-inytex::install_tinytex()
+tinytex::install_tinytex()
 ```
 
 If you want the full-blown (2GB) LaTeX installation, go to https://www.Latex-project.org/get/ and scroll down to the links for the MacTex Distribution (for Mac users) and MikTex Distribution (for Windows users). 
