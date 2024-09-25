@@ -10,6 +10,7 @@ pre = "<b>3. </b>"
 [base plots](https://www.dropbox.com/scl/fi/7oo01inpl2hq199qo7yh0/code8-base-plots.R?rlkey=0uj2w1kzq4x1cy9bw41teibli&st=uuwvoudv&dl=1) | 
 [ggplot2](https://www.dropbox.com/scl/fi/dmok0p5ltte4pis7rhn05/code9-ggplot.R?rlkey=470lynkzgar4sinrj288lz2q5&st=9liktlnh&dl=1) | 
 [quarto](https://www.dropbox.com/scl/fi/fpr2uc4yyncu9ljgrhrg6/code10-quarto.qmd?rlkey=972sgkdr7jqi2m8va0x21dvua&st=6r0xmtyk&dl=1) 
+[solutions](https://www.dropbox.com/scl/fi/t17b9ubsmql2h13fx2sy6/solutions.R?rlkey=4d3o654mekc8w16xp7w4n8h8b&st=735ruwm7&dl=0)
 
 ---
 
