@@ -3,7 +3,7 @@
   <channel>
     <title>Schedule :: My New Hugo Site</title>
     <link>http://localhost:1313/0-schedule/index.html</link>
-    <description>Date Time Room Mon Sept 23 10:00a - 2:30p G304 Tues Sept 24 3:00p - 7:00p G304 Wed Sept 25 10:00a - 2:30p Korn Hall Please bring your laptops!</description>
+    <description>Date Time Room Mon Sept 23 10:00a - 2:30p G304 Tues Sept 24 3:00p - 7:00p G304 Wed Sept 25 10:00a - 2:30p Crown Auditorium Please bring your laptops!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/0-schedule/index.xml" rel="self" type="application/rss+xml" />
