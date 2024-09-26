@@ -7,11 +7,39 @@ pre = "<b>2. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/quizzes/1035788)
 
 **Files for today:** 
-[data.table](https://www.dropbox.com/scl/fi/0f3feqrswpf1pc6vy4g3k/code5-datatable.R?rlkey=039ntyue2hh9xaunf7raagrma&st=cwg8upwv&dl=1) | 
-[tidyverse](https://www.dropbox.com/scl/fi/urjkwrh4gtobm5hm2bosi/code6-tidyverse.R?rlkey=ecp3xtv3e26588r1xifm5gwig&st=58pjeoaj&dl=1) | 
-[functions](https://www.dropbox.com/scl/fi/zhuipxrfsilzqbu2s5pzz/code7-functions.R?rlkey=o8a4xee365df6bvtxq0s2rhcf&st=ba6zdahe&dl=1)
+[data.frames](https://www.dropbox.com/scl/fi/mthl5r8885xozbmgoqvky/code4-dataframes.R?rlkey=y6ag3dyaq4ryfgva95sg6vdzt&st=jvugg1o5&dl=1) | [data.table](https://www.dropbox.com/scl/fi/0f3feqrswpf1pc6vy4g3k/code5-datatable.R?rlkey=039ntyue2hh9xaunf7raagrma&st=cwg8upwv&dl=1) | 
+[tidyverse](https://www.dropbox.com/scl/fi/urjkwrh4gtobm5hm2bosi/code6-tidyverse.R?rlkey=ecp3xtv3e26588r1xifm5gwig&st=58pjeoaj&dl=1) 
 
 ---
+
+
+#### Data.frames
+
+- Data.frames are an extremely useful object for analysis
+  - You can think of them as an Excel table
+  - However, they are list objects in R with certain constraints and special properties
+  - Each element of the list (ie column of a data.frame) is a vector of the same length
+  - These vectors (ie data.frame columns) can store values of different types
+- To subset a data.frame, use the list and vector subsetting operations already discussed
+- To add a new column, syntax is the same as adding a new list element
+- Sorting is simply subsetting the dataframe with all rows (in a different order) returned
+- Common analytic operations
+  - Use `aggregate()` to perform a common split-apply-combine summary analysis
+  - Use `merge()` to combine multiple data.frames based on the values of select key columns
+- Categorical variables are called "factors" in R
+  - Offer efficient storage when the number of levels (values of the categorical variable) is much fewer than the number of rows of the data.frame
+  - Many algorithms handle them appropriately, eg, gender in the linear regression `lm(height ~ weight + gender)`
+
+
+
+#### Data Input/Output
+
+- R is generally fantastic at getting data in and out of R, but we'll focus only on 2 common approaches:
+  - `read.csv()` brings data in, stored as a data.frame object
+  - `write.csv()` does exactly what you think
+  - `save()` write one or more objects to disk in an efficient R-specific storage format
+  - `load()` reads in `saved` objects
+
 
 
 #### Data.table
@@ -35,6 +63,7 @@ pre = "<b>2. </b>"
   - fast rolling joins
 
 
+
 #### Tidyverse
 
 - Tidyverse overview
@@ -55,18 +84,4 @@ pre = "<b>2. </b>"
 - Offers the best syntax for reshaping data from wide to long (or vice-versa) with `pivot_wider()` and `pivot_longer()`
 
 
-#### Functions and Control Flow
 
-- Use the `function()` function to create your own function
-- Functions have:
-  - Formals, which are the list of arguments that control how you call the function
-  - A body, which returns the last evaluated expression or whater you put in `return()` 
-  - An environment, which determines scoping (ie, how the function finds the values associated with named objects)
-- There are some R-specific things to be aware of
-  - Lazy evaluation
-  - Things that appear to have the same name, eg `fun(x=x)`
-  - Anonymous "lambda" functions
-- Control Flow
-  - `if() {...} else {...}`, and `ifelse()`
-  - `with` assignment
-  - loops via `foreach()` and `while()`

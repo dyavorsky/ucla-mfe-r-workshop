@@ -11,10 +11,10 @@ pre = "<b>1. </b>"
 [example](https://www.dropbox.com/scl/fi/bn2tijeqdqrowwxr7hcm0/code0-example.R?rlkey=xi3n0wp8pwv971lm5kucu9s0a&st=2r9g2nf6&dl=1) | 
 [vectors](https://www.dropbox.com/scl/fi/e4glf0z1dj1i0ihx7vrbn/code1-vectors.R?rlkey=z3lqab7iad1ueddbkv45xsmvj&st=c6gler1v&dl=1) | 
 [matrices](https://www.dropbox.com/scl/fi/7ur3apth3dovnllxc2sbr/code2-matrices.R?rlkey=alwj99ip0k49jrx72p0mliy1e&st=gphx7osq&dl=1) | 
-[lists](https://www.dropbox.com/scl/fi/p8ze55kkstismnd98ekhj/code3-lists.R?rlkey=wywa96oeecrwcqx1nwmhzfj3g&st=xt0k3ru3&dl=1) | 
-[data.frames](https://www.dropbox.com/scl/fi/mthl5r8885xozbmgoqvky/code4-dataframes.R?rlkey=y6ag3dyaq4ryfgva95sg6vdzt&st=jvugg1o5&dl=1)
+[lists](https://www.dropbox.com/scl/fi/p8ze55kkstismnd98ekhj/code3-lists.R?rlkey=wywa96oeecrwcqx1nwmhzfj3g&st=xt0k3ru3&dl=1) 
 
 ---
+
 
 #### Object Types
 
@@ -36,6 +36,7 @@ pre = "<b>1. </b>"
   - The expression `2+2` is actually a call to the `+()` function, as in `` `+`(2,2) `` 
 
     
+
 #### Vectors
 
 - R automatically performs vector recycling when operating on multiple vectors of different lengths
@@ -84,27 +85,3 @@ pre = "<b>1. </b>"
   - `lapply()` returns a list of results, `sapply()` returns a (simplified) vector
 
 
-#### Data.frames
-
-- Data.frames are an extremely useful object for analysis
-  - You can think of them as an Excel table
-  - However, they are list objects in R with certain constraints and special properties
-  - Each element of the list (ie column of a data.frame) is a vector of the same length
-  - These vectors (ie data.frame columns) can store values of different types
-- To subset a data.frame, use the list and vector subsetting operations already discussed
-- To add a new column, syntax is the same as adding a new list element
-- Sorting is simply subsetting the dataframe with all rows (in a different order) returned
-- Common analytic operations
-  - Use `aggregate()` to perform a common split-apply-combine summary analysis
-  - Use `merge()` to combine multiple data.frames based on the values of select key columns
-- Categorical variables are called "factors" in R
-  - Offer efficient storage when the number of levels (values of the categorical variable) is much fewer than the number of rows of the data.frame
-  - Many algorithms handle them appropriately, eg, gender in the linear regression `lm(height ~ weight + gender)`
-
-#### Data Input/Output
-
-- R is generally fantastic at getting data in and out of R, but we'll focus only on 2 common approaches:
-  - `read.csv()` brings data in, stored as a data.frame object
-  - `write.csv()` does exactly what you think
-  - `save()` write one or more objects to disk in an efficient R-specific storage format
-  - `load()` reads in `saved` objects

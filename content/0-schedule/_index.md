@@ -11,4 +11,3 @@ chapter = false
 | Wed  Sept 25  | 10:00a - 2:30p   | Crown Auditorium  |
 
 Please bring your laptops! 
-ß

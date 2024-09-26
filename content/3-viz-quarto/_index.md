@@ -7,12 +7,30 @@ pre = "<b>3. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/quizzes/1035789)
 
 **Files for today:** 
-[base plots](https://www.dropbox.com/scl/fi/7oo01inpl2hq199qo7yh0/code8-base-plots.R?rlkey=0uj2w1kzq4x1cy9bw41teibli&st=uuwvoudv&dl=1) | 
+[functions](https://www.dropbox.com/scl/fi/zhuipxrfsilzqbu2s5pzz/code7-functions.R?rlkey=o8a4xee365df6bvtxq0s2rhcf&st=ba6zdahe&dl=1) | [base plots](https://www.dropbox.com/scl/fi/7oo01inpl2hq199qo7yh0/code8-base-plots.R?rlkey=0uj2w1kzq4x1cy9bw41teibli&st=uuwvoudv&dl=1) | 
 [ggplot2](https://www.dropbox.com/scl/fi/dmok0p5ltte4pis7rhn05/code9-ggplot.R?rlkey=470lynkzgar4sinrj288lz2q5&st=9liktlnh&dl=1) | 
-[quarto](https://www.dropbox.com/scl/fi/fpr2uc4yyncu9ljgrhrg6/code10-quarto.qmd?rlkey=972sgkdr7jqi2m8va0x21dvua&st=6r0xmtyk&dl=1) 
+[quarto](https://www.dropbox.com/scl/fi/fpr2uc4yyncu9ljgrhrg6/code10-quarto.qmd?rlkey=972sgkdr7jqi2m8va0x21dvua&st=6r0xmtyk&dl=1) | 
 [solutions](https://www.dropbox.com/scl/fi/t17b9ubsmql2h13fx2sy6/solutions.R?rlkey=4d3o654mekc8w16xp7w4n8h8b&st=735ruwm7&dl=0)
 
 ---
+
+
+#### Functions and Control Flow
+
+- Use the `function()` function to create your own function
+- Functions have:
+  - Formals, which are the list of arguments that control how you call the function
+  - A body, which returns the last evaluated expression or whater you put in `return()` 
+  - An environment, which determines scoping (ie, how the function finds the values associated with named objects)
+- There are some R-specific things to be aware of
+  - Lazy evaluation
+  - Things that appear to have the same name, eg `fun(x=x)`
+  - Anonymous "lambda" functions
+- Control Flow
+  - `if() {...} else {...}`, and `ifelse()`
+  - `with` assignment
+  - loops via `foreach()` and `while()`
+
 
 
 #### Base Plots
@@ -55,6 +73,7 @@ pre = "<b>3. </b>"
   - A coordinate system
   - Facets, for creating small multiples of plots
 - The theme system provides fine control over the non-data elements of the plot
+
 
 
 #### Quarto
