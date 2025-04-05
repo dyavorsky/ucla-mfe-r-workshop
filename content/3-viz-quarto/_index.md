@@ -80,7 +80,7 @@ pre = "<b>3. </b>"
 
 - [Quarto](https://quarto.org/) is an open-source scientified and technical publishing system created by the team at Posit
 - A Quarto document
-  - Can by a Jupyter Notebook or a plain text .qmd file with a YAML header
+  - Can be a Jupyter Notebook or a plain text .qmd file with a YAML header
   - Consisting of Pandoc markdown and code chunks
   - Renders to multiple output formats including PDF, MS Word, HTML
   - Enables reproducible research and literate programming
@@ -89,7 +89,7 @@ pre = "<b>3. </b>"
   - Is quite simple and the basics can be learned in an hour
   - Includes Latex math equations, citations, cross references, and more
 - Code chunks:
-  - Begin and end with three back ticks `` ` ``
+  - Begin and end with three back ticks `` ` `` (near escape key on keyboard)
   - Support a variety of languages, including R, Python, Julia, C++, BASH
 
 
