@@ -4,7 +4,7 @@ weight = 99
 +++
 
 
-There are a tremendous set of resources for learning R.  But two excellent, free books are:
+There are a tremendous set of resources for learning R.  But two excellent free books are:
 
 1. **[R for Data Science](https://r4ds.had.co.nz/)** by Hadley Wickham & Garrett Grolemund, which introduces R and the Tidyverse
 2. **[Advanced R](https://adv-r.hadley.nz/)** by Hadley Wickham, which dives into all the gory details

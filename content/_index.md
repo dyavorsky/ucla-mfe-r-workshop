@@ -1,6 +1,5 @@
 +++
 title = "Home"
-date = 2024-09-14T21:56:45-07:00
 weight = 0
 
 +++
@@ -12,5 +11,9 @@ weight = 0
 
 Hi MFEs!
 
-Welcome to the **R Programming Workshop**. This is a three-session intensive workshop to get you comfortable using R. 
+Welcome to the **R Programming Workshop**. 
+
+This is a three-session intensive workshop to get you comfortable using R. 
+
+The associated UCLA Canvas/BruinLearn page can be found [here](https://bruinlearn.ucla.edu/courses/144052/pages/r-workshop/edit).
 

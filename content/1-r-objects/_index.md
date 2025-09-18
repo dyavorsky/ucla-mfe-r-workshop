@@ -5,13 +5,13 @@ pre = "<b>1. </b>"
 +++
 
 
-**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/quizzes/1035787)
+**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849057)
 
 **Files for today:** 
-[example](https://www.dropbox.com/scl/fi/bn2tijeqdqrowwxr7hcm0/code0-example.R?rlkey=xi3n0wp8pwv971lm5kucu9s0a&st=2r9g2nf6&dl=1) | 
-[vectors](https://www.dropbox.com/scl/fi/e4glf0z1dj1i0ihx7vrbn/code1-vectors.R?rlkey=z3lqab7iad1ueddbkv45xsmvj&st=c6gler1v&dl=1) | 
-[matrices](https://www.dropbox.com/scl/fi/7ur3apth3dovnllxc2sbr/code2-matrices.R?rlkey=alwj99ip0k49jrx72p0mliy1e&st=gphx7osq&dl=1) | 
-[lists](https://www.dropbox.com/scl/fi/p8ze55kkstismnd98ekhj/code3-lists.R?rlkey=wywa96oeecrwcqx1nwmhzfj3g&st=xt0k3ru3&dl=1) 
+[example](https://www.dropbox.com/scl/fi/ez0xnkyc8qt0433wjfkb8/code0-example.R?rlkey=4ob16mh6bq977lpwl86md0lz4&dl=0) | 
+[vectors](https://www.dropbox.com/scl/fi/m1zeebn0073iww6f11iqb/code1-vectors.R?rlkey=2pl9fu0g5yas7066e65ak117t&dl=0) | 
+[matrices](https://www.dropbox.com/scl/fi/v32dww1swn4kqp6i3sns0/code2-matrices.R?rlkey=df5t07qvoyrk8xrjlx2wwyx02&dl=0) | 
+[lists](https://www.dropbox.com/scl/fi/a0rhx4i3two19tryywitr/code3-lists.R?rlkey=mwi4vy24p4isnw43dakbsa189&dl=0) 
 
 ---
 

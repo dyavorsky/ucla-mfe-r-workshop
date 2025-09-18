@@ -4,13 +4,14 @@ weight = 30
 pre = "<b>3. </b>"
 +++
 
-**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/quizzes/1035789)
+**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849383)
 
 **Files for today:** 
-[functions](https://www.dropbox.com/scl/fi/zhuipxrfsilzqbu2s5pzz/code7-functions.R?rlkey=o8a4xee365df6bvtxq0s2rhcf&st=ba6zdahe&dl=1) | [base plots](https://www.dropbox.com/scl/fi/7oo01inpl2hq199qo7yh0/code8-base-plots.R?rlkey=0uj2w1kzq4x1cy9bw41teibli&st=uuwvoudv&dl=1) | 
-[ggplot2](https://www.dropbox.com/scl/fi/dmok0p5ltte4pis7rhn05/code9-ggplot.R?rlkey=470lynkzgar4sinrj288lz2q5&st=9liktlnh&dl=1) | 
-[quarto](https://www.dropbox.com/scl/fi/fpr2uc4yyncu9ljgrhrg6/code10-quarto.qmd?rlkey=972sgkdr7jqi2m8va0x21dvua&st=6r0xmtyk&dl=1) | 
-[solutions](https://www.dropbox.com/scl/fi/t17b9ubsmql2h13fx2sy6/solutions.R?rlkey=4d3o654mekc8w16xp7w4n8h8b&st=735ruwm7&dl=0)
+[functions](https://www.dropbox.com/scl/fi/jkdf6kn4l8gyev4100piv/code7-functions.R?rlkey=w31olrnn36dij6vu8wmn46ggr&dl=0) | 
+[base plots](https://www.dropbox.com/scl/fi/d62i6mf2ytct6zxik8wzi/code8-base-plots.R?rlkey=yklnplvuivgs5opd083t1t9v0&dl=0) | 
+[ggplot2](https://www.dropbox.com/scl/fi/39lflh337hph1sf62viny/code9-ggplot.R?rlkey=lcwczxbaje1z7narfjc1oh2xk&dl=0) | 
+[quarto](https://www.dropbox.com/scl/fi/zjsb6l7lxxe9fgqtb5gdc/code10-quarto.qmd?rlkey=7rcix3pnzx2jh7teljue7w39e&dl=0) | 
+[solutions](https://www.dropbox.com/scl/fi/5028ib2riey1ke48obbhg/solutions.R?rlkey=npad67gw5qloktjjrqxtsd1qx&dl=0)
 
 ---
 

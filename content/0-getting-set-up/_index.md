@@ -5,13 +5,13 @@ chapter = false
 +++
 
 
-**Please do the following _before_ our first workshop session on Monday Sept 23 at 10:00am**
+**Please do the following _before_ our first workshop session on Monday Sept 22 at 10:00am**
 
 
 
 ### 1. Get R
 
-Download (or update to) the latest version of R (version 4.4.1) from https://cran.r-project.org/
+Download (or update to) the latest version of R (version 4.5.1) from https://cran.r-project.org/
 
 R is a software environment for computing, data analysis, and graphics. It's like Python, but geared toward statistical work; like Stata, but better for programming; like Julia but people actually use it; like Matlab, but free.
 
@@ -28,11 +28,11 @@ I highly recommend RStudio, particularly if you are new to statistical programmi
 - Download the free desktop version of RStudio from  
   https://posit.co/download/rstudio-desktop/
 
+- Or download Positron by following the "Install Postron" section of the ReadMe at  
+  https://posit.co/products/ide/positron/
+
 - Alternatively, download VS Code from  
   https://code.visualstudio.com/download
-
-- Or download Positron by following the "Install Postron" section of the ReadMe at  
-  https://github.com/posit-dev/positron
 
 ![RStudio](rstudio.png)
 ![VSCode](vscode.png)
@@ -73,7 +73,7 @@ Here's some text, and here's some code:
 ```
 ````
 
-Render the file, agreeing to install the "knitr" package if prompted.  
+Render the file, agreeing to install the "knitr" or "rmarkdown" packages, if prompted.  
 
 - RStudio:  Click the button with the blue arrow in the top center of the screen labeled "Render"
 - Positron:  Click the button on the top-right of the file labeled "Preview"
@@ -88,7 +88,7 @@ This does the following:
 
 ![Rendered Doc](rendered_pdf.png)
 
-If you created the source .qmd document with R code and got it render to PDF, as below, then you're all set!
+If you created the source .qmd document and got it render to PDF, as below, then you're all set!
 
 If not, your IDE should report an error. Copy/paste the error into a web search or a LLM and troubleshoot. If that fails, we can fix it together.
 

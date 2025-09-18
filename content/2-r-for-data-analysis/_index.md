@@ -4,11 +4,12 @@ weight = 20
 pre = "<b>2. </b>"
 +++
 
-**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/quizzes/1035788)
+**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849382)
 
 **Files for today:** 
-[data.frames](https://www.dropbox.com/scl/fi/mthl5r8885xozbmgoqvky/code4-dataframes.R?rlkey=y6ag3dyaq4ryfgva95sg6vdzt&st=jvugg1o5&dl=1) | [data.table](https://www.dropbox.com/scl/fi/0f3feqrswpf1pc6vy4g3k/code5-datatable.R?rlkey=039ntyue2hh9xaunf7raagrma&st=cwg8upwv&dl=1) | 
-[tidyverse](https://www.dropbox.com/scl/fi/urjkwrh4gtobm5hm2bosi/code6-tidyverse.R?rlkey=ecp3xtv3e26588r1xifm5gwig&st=58pjeoaj&dl=1) 
+[data.frames](https://www.dropbox.com/scl/fi/7d2c4my26atzlmzqlh257/code4-dataframes.R?rlkey=049qehf0bj8d806u9k7trru7p&dl=0) | 
+[data.table](https://www.dropbox.com/scl/fi/wv9ksguahm6avs3p8lny7/code5-datatable.R?rlkey=9vddi1t5f3xubsn1g0ebxkruv&dl=0) | 
+[tidyverse](https://www.dropbox.com/scl/fi/xpik3udttugvjfcr4msm3/code6-tidyverse.R?rlkey=mds2xmek0x05g51tnhwvfsf92&dl=0) 
 
 ---
 

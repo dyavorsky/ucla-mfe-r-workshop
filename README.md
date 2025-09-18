@@ -1,4 +1,4 @@
-### MFE 2024
+### MFE 2025
 
 # **R**  Workshop
 
@@ -8,3 +8,4 @@ Welcome to the **R Programming Workshop**. This is a three-session intensive wor
 
 Access the workshop webpage at [ucla-mfe-r-workshop.com](https://ucla-mfe-r-workshop.com/)
 
+The associated UCLA Canvas/BruinLearn page can be found [here](https://bruinlearn.ucla.edu/courses/144052/pages/r-workshop/edit)
