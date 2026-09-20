@@ -1,0 +1,17 @@
+{{- /*
+  Download link for a script that sits beside this page's _index.md.
+
+  Usage: {{< dl "code1-vectors.R" "vectors" >}}
+
+  The `download` attribute forces a download instead of letting the browser
+  display the file, and pins the saved filename to the resource's own name.
+  Without it, GitHub Pages serves .R with no Content-Disposition, the browser
+  renders it as text, and saving takes the name from the page title instead.
+*/ -}}
+{{- $file := .Get 0 -}}
+{{- $label := .Get 1 | default $file -}}
+{{- with $.Page.Resources.Get $file -}}
+<a href="{{ .RelPermalink }}" download="{{ $file }}">{{ $label }}</a>
+{{- else -}}
+{{- errorf "%q: dl shortcode cannot find the page resource %q" $.Page.File.Filename $file -}}
+{{- end -}}

@@ -7,9 +7,9 @@ pre = "<b>2. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/2040705)
 
 **Files for today:** 
-[data.frames](code4-dataframes.R) | 
-[data.table](code5-datatable.R) | 
-[tidyverse](code6-tidyverse.R) 
+{{< dl "code4-dataframes.R" "data.frames" >}} | 
+{{< dl "code5-datatable.R" "data.table" >}} | 
+{{< dl "code6-tidyverse.R" "tidyverse" >}} 
 
 ---
 

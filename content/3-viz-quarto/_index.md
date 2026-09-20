@@ -7,10 +7,10 @@ pre = "<b>3. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/2040706)
 
 **Files for today:** 
-[functions](code7-functions.R) | 
-[base plots](code8-base-plots.R) | 
-[ggplot2](code9-ggplot.R) | 
-[quarto](code10-quarto.qmd) 
+{{< dl "code7-functions.R" "functions" >}} | 
+{{< dl "code8-base-plots.R" "base plots" >}} | 
+{{< dl "code9-ggplot.R" "ggplot2" >}} | 
+{{< dl "code10-quarto.qmd" "quarto" >}} 
 
 ---
 

@@ -8,10 +8,10 @@ pre = "<b>1. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/2040667)
 
 **Files for today:** 
-[example](code0-example.R) | 
-[vectors](code1-vectors.R) | 
-[matrices](code2-matrices.R) | 
-[lists](code3-lists.R) 
+{{< dl "code0-example.R" "example" >}} | 
+{{< dl "code1-vectors.R" "vectors" >}} | 
+{{< dl "code2-matrices.R" "matrices" >}} | 
+{{< dl "code3-lists.R" "lists" >}} 
 
 ---
 
