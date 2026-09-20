@@ -55,7 +55,7 @@ These values are year-specific and appear in several places:
   per-session attendance assignment IDs at the top of each numbered session page.
 - The day's scripts themselves, which live in each session's page bundle (see Content
   above) — update them in place; the "Files for today" links are relative and need no
-  edit. The one exception is `solutions.R` on the day-3 page, still a Dropbox link.
+  edit. The site no longer links to Dropbox anywhere.
 - Dates and room in `content/0-schedule/_index.md`.
 - The cohort year ("MFE 2025") in `content/_index.md` and `README.md`.
 - The pinned R version in `content/0-getting-set-up/_index.md`.

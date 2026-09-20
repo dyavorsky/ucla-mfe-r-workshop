@@ -10,8 +10,7 @@ pre = "<b>3. </b>"
 [functions](code7-functions.R) | 
 [base plots](code8-base-plots.R) | 
 [ggplot2](code9-ggplot.R) | 
-[quarto](code10-quarto.qmd) | 
-[solutions](https://www.dropbox.com/scl/fi/5028ib2riey1ke48obbhg/solutions.R?rlkey=npad67gw5qloktjjrqxtsd1qx&dl=0)
+[quarto](code10-quarto.qmd) 
 
 ---
 
