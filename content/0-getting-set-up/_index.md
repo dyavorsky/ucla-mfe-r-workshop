@@ -31,9 +31,17 @@ I highly recommend Positron (a fork of VS Code), but RStudio and VS Code are oth
 - Or, download VS Code from  
   https://code.visualstudio.com/download
 
+{{< tabs groupid="ide" >}}
+{{% tab title="Positron" %}}
 ![Positron](positron.png)
+{{% /tab %}}
+{{% tab title="RStudio" %}}
 ![RStudio](rstudio.png)
-![VSCode](vscode.png)
+{{% /tab %}}
+{{% tab title="VS Code" %}}
+![VS Code](vscode.png)
+{{% /tab %}}
+{{< /tabs >}}
 
 RStudio and Positron are ready-to-go right away. Open your IDE and look for the _Console_ (left side of RStudio, bottom-middle of Positron) with a welcome message about R. (In Positron, if you don't see the message, but you see the option to "Start Session" click that and select R from the popup at the top of the screen.) 
 

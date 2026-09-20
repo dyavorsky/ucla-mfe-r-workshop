@@ -14,7 +14,18 @@ theme = 'hugo-theme-relearn'
 [params.author]
     name = 'Dan Yavorsky'
 
+# More than one variant here is what makes Relearn render the theme
+# switcher in the sidebar footer. The first entry is the default: 'auto'
+# follows the reader's OS appearance setting.
 [[params.themeVariant]]
     auto = ['zen-light', 'zen-dark']
     identifier = 'zen-auto'
-    name = 'Zen Light/Dark'
+    name = 'Auto (OS setting)'
+
+[[params.themeVariant]]
+    identifier = 'zen-light'
+    name = 'Light'
+
+[[params.themeVariant]]
+    identifier = 'zen-dark'
+    name = 'Dark'
