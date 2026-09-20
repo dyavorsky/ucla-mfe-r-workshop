@@ -4,7 +4,7 @@ weight = 30
 pre = "<b>3. </b>"
 +++
 
-**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849383)
+**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/2040706)
 
 **Files for today:** 
 [functions](code7-functions.R) | 

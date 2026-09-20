@@ -4,7 +4,7 @@ weight = 20
 pre = "<b>2. </b>"
 +++
 
-**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849382)
+**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/2040705)
 
 **Files for today:** 
 [data.frames](code4-dataframes.R) | 

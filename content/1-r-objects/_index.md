@@ -5,7 +5,7 @@ pre = "<b>1. </b>"
 +++
 
 
-**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849057)
+**Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/2040667)
 
 **Files for today:** 
 [example](code0-example.R) | 

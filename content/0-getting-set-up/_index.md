@@ -5,7 +5,13 @@ chapter = false
 +++
 
 
-**Please do the following _before_ our first workshop session on Monday Sept 21 at 10:00am**
+**Please do the following _before_ our first workshop session**
+
+
+
+### 0. Take the Pre-Workshop Survey
+
+Take the pre-workshop survey on BruinLearn [here](https://bruinlearn.ucla.edu/courses/144052/assignments/2040704)
 
 
 
@@ -19,6 +25,8 @@ You are welcome to open the minimal R app once downloaded. It's extremely basic:
 
 ![](r_app.png)
 
+
+
 ## 2. Get an IDE
 
 To improve your experience with R, you'll want an integrated development environment (IDE),  which is an application to help you write, test, and debug code. 
@@ -28,7 +36,7 @@ I highly recommend Positron (a fork of VS Code), but RStudio and VS Code are oth
 - Download Positron or RStudio by clicking their download buttons at the top-right of 
   https://posit.co/ 
 
-- Or, download VS Code from  
+- Or, download VS Code from 
   https://code.visualstudio.com/download
 
 {{< tabs groupid="ide" >}}
@@ -81,18 +89,18 @@ Here's some text; some code follows:
 ```
 ````
 
-Render the file, agreeing to install the "knitr" or "rmarkdown" packages, if prompted.  
+Render the file, agreeing to install the "knitr" and "rmarkdown" packages, if prompted. Quarto needs both.  
 
 - RStudio:  Click the button with the blue arrow in the top center of the screen labeled "Render"
 - Positron:  Click the button on the top-left of the file labeled "Preview"
 - VS Code:  Install the Quarto extension, then click the "Preview" on the top-right of the document (next to the split-editor button)
 - Or, use Cmd+Shift+K (Mac) or Ctrl+Shift+K (Windows)
 
-This does the following: 
+Rendering the file does the following: 
 
 1. The knitr package in R executes any R code and converts the source quarto file (test.qmd) to an intermediate markdown file (test.md)
 2. Pandoc (a program bundled with RStudio and Position, and is installed with the Quarto extension in VS Code) converts the markdown file into a LaTeX file (test.tex) 
-3. Your LaTeX engine (installed via TinyTex in step 3 above) renders the .tex file to a PDF file (test.pdf)
+3. Your LaTeX engine (lualatex by default, installed via TinyTex in step 3 above) renders the .tex file to a PDF file (test.pdf)
 4. Your PDF, once rendered, should automatically open for you to view in either a pane of your IDE or in a separate window with your system's default PDF viewing application. The PDF file is on disk in the same directory where you saved test.qmd.
 
 ![Rendered Doc](rendered_pdf.png)
