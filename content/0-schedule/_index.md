@@ -6,8 +6,8 @@ chapter = false
 
 | Date          | Time             | Room  |
 |---------------|------------------|-------|
-| Mon  Sept 22  | 10:00a - 2:30p   | G419  |
-| Tues Sept 23  |  3:00p - 7:00p   | G419  |
-| Wed  Sept 24  | 10:00a - 2:30p   | G419  |
+| Mon  Sept 21  | 10:00a - 2:30p   | A301  |
+| Tues Sept 22  |  3:00p - 7:00p   | A301  |
+| Wed  Sept 23  | 10:00a - 2:30p   | A301  |
 
 Please bring your laptops! 
