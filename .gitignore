@@ -1,0 +1,11 @@
+# Hugo build output
+public/
+
+# Hugo lock file
+.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# Quarto scratch
+.quarto/
