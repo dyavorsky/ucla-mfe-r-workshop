@@ -1,0 +1,112 @@
+---
+title: "Problem Set 1"
+author: "Your Name"
+date: "Add Date"
+format: pdf
+---
+
+
+## Question 1
+
+#### 1a) Put question 1a text here.
+
+Put answer here. You can format your text as *italic* and **bold**.
+
+New paragraphs go on their own line, separated by an empty line.
+
+ - first
+ - second item
+ - third
+ 
+
+
+
+
+#### 1b) Put question 1b text here.
+
+Inline math goes between dollar signs (e.g., $\beta$).
+
+Centered math goes between double dollar signs:
+
+$$
+\hat{\beta} = (X'X)^{-1}X'y 
+$$
+
+You can align math using the `align` or `flalign` latex-style environments. Alignment is based on the ampersand, newlines are created with a double backslash, and equation numbering is controlled by the asterisk:
+
+\begin{align*}
+  c^2 
+  &= a^2 + b^2 \\
+  &= (a \times a) + (b \times b)
+\end{align*}
+
+
+
+
+## Question 2
+
+#### 2a) Put question 2a text here
+
+You can write inline code that gets evaluated like so: `r x=3; x^2`. 
+
+Or you can write inline code that doesn't get evaluated: `x^2`.
+
+You can write code between triple ticks and control evaluation with the `eval` option. Evaluated code will print the results of evaluation into the rendered version of this document.
+
+```{r, echo=TRUE}
+library(data.table)
+data(mtcars)
+setDT(mtcars)
+y <- 7
+y^2
+```
+
+```{r, fig.height=3, fig.width=5}
+plot(1:10, (1:10)^2, pch=20, main="My Plot", xlab="X", ylab="Y")
+```
+
+
+#### 2b) Put question 2b text here
+
+All of this information (and much more) is available on the Quarto [website](https://quarto.org/docs/guide/).
+
+
+
+
+
+## Challenge Question
+
+The two chunks below are supposed to report the average fuel economy of
+**4-cylinder** cars. This document renders with no error and no warning, and the
+sentence underneath them prints a number that is simply wrong.
+
+```{r}
+data(mtcars)
+avg_mpg <- mean(mtcars$mpg)
+```
+
+```{r}
+#| eval: false
+mtcars <- subset(mtcars, cyl == 4)
+avg_mpg <- mean(mtcars$mpg)
+```
+
+The average mpg of 4-cylinder cars is `r round(avg_mpg, 2)`.
+
+a)  Render the document. What number appears in the sentence above, and what
+    should it be?
+
+b)  Which chunk option caused it? Explain why nothing in the rendered output
+    hints that a chunk was skipped.
+
+c)  Running these chunks one at a time in the console will not reveal the
+    problem, and neither will re-rendering. Explain why, then name the habit
+    that does catch it.
+
+d)  Fix it twice. First by changing the chunk option. Then a second way, by
+    rewriting the sentence so that the prose cannot drift out of sync with the
+    data even if someone edits the chunks later.
+
+e)  This is the failure mode that makes a rendered report dangerous rather than
+    merely wrong: the document looks finished. In two sentences, describe what
+    you would check before sending a rendered PDF to someone who will act on it.

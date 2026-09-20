@@ -8,10 +8,10 @@ pre = "<b>1. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849057)
 
 **Files for today:** 
-[example](https://www.dropbox.com/scl/fi/ez0xnkyc8qt0433wjfkb8/code0-example.R?rlkey=4ob16mh6bq977lpwl86md0lz4&dl=0) | 
-[vectors](https://www.dropbox.com/scl/fi/m1zeebn0073iww6f11iqb/code1-vectors.R?rlkey=2pl9fu0g5yas7066e65ak117t&dl=0) | 
-[matrices](https://www.dropbox.com/scl/fi/v32dww1swn4kqp6i3sns0/code2-matrices.R?rlkey=df5t07qvoyrk8xrjlx2wwyx02&dl=0) | 
-[lists](https://www.dropbox.com/scl/fi/a0rhx4i3two19tryywitr/code3-lists.R?rlkey=mwi4vy24p4isnw43dakbsa189&dl=0) 
+[example](code0-example.R) | 
+[vectors](code1-vectors.R) | 
+[matrices](code2-matrices.R) | 
+[lists](code3-lists.R) 
 
 ---
 

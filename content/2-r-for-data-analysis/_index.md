@@ -7,9 +7,9 @@ pre = "<b>2. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849382)
 
 **Files for today:** 
-[data.frames](https://www.dropbox.com/scl/fi/7d2c4my26atzlmzqlh257/code4-dataframes.R?rlkey=049qehf0bj8d806u9k7trru7p&dl=0) | 
-[data.table](https://www.dropbox.com/scl/fi/wv9ksguahm6avs3p8lny7/code5-datatable.R?rlkey=9vddi1t5f3xubsn1g0ebxkruv&dl=0) | 
-[tidyverse](https://www.dropbox.com/scl/fi/xpik3udttugvjfcr4msm3/code6-tidyverse.R?rlkey=mds2xmek0x05g51tnhwvfsf92&dl=0) 
+[data.frames](code4-dataframes.R) | 
+[data.table](code5-datatable.R) | 
+[tidyverse](code6-tidyverse.R) 
 
 ---
 

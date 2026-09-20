@@ -7,10 +7,10 @@ pre = "<b>3. </b>"
 **Submit Attendance:** [link](https://bruinlearn.ucla.edu/courses/144052/assignments/1849383)
 
 **Files for today:** 
-[functions](https://www.dropbox.com/scl/fi/jkdf6kn4l8gyev4100piv/code7-functions.R?rlkey=w31olrnn36dij6vu8wmn46ggr&dl=0) | 
-[base plots](https://www.dropbox.com/scl/fi/d62i6mf2ytct6zxik8wzi/code8-base-plots.R?rlkey=yklnplvuivgs5opd083t1t9v0&dl=0) | 
-[ggplot2](https://www.dropbox.com/scl/fi/39lflh337hph1sf62viny/code9-ggplot.R?rlkey=lcwczxbaje1z7narfjc1oh2xk&dl=0) | 
-[quarto](https://www.dropbox.com/scl/fi/zjsb6l7lxxe9fgqtb5gdc/code10-quarto.qmd?rlkey=7rcix3pnzx2jh7teljue7w39e&dl=0) | 
+[functions](code7-functions.R) | 
+[base plots](code8-base-plots.R) | 
+[ggplot2](code9-ggplot.R) | 
+[quarto](code10-quarto.qmd) | 
 [solutions](https://www.dropbox.com/scl/fi/5028ib2riey1ke48obbhg/solutions.R?rlkey=npad67gw5qloktjjrqxtsd1qx&dl=0)
 
 ---
