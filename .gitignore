@@ -9,3 +9,8 @@ public/
 
 # Quarto scratch
 .quarto/
+**/*.quarto_ipynb
+
+# Quarto render output -- clicking Preview on a .qmd writes these into content/
+content/**/code*.md
+content/**/*_files/

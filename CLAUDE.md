@@ -57,5 +57,7 @@ These values are year-specific and appear in several places:
   above) — update them in place; the "Files for today" links are relative and need no
   edit. The site no longer links to Dropbox anywhere.
 - Dates and room in `content/0-schedule/_index.md`.
-- The cohort year ("MFE 2025") in `content/_index.md` and `README.md`.
+- The cohort year no longer appears anywhere — both `content/_index.md` and
+  `README.md` now head with a plain "MFE **R** Workshop". Nothing to update, but
+  check here first if a year ever gets reintroduced.
 - The pinned R version in `content/0-getting-set-up/_index.md`.
