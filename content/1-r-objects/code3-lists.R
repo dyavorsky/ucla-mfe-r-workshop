@@ -29,6 +29,9 @@ mylist <- list(alpha = 1:10,
     length(mylist[[1]])
     length(mylist[1])
 
+    mylist$al       # <-- dollar let's you abbreviate (as long as its unambiguous)
+    mylist[["al"]]  # <-- double square brackets do not allow abbreviation
+
 # lapply and sapply
     newlist <- list(
         a = 1:10,

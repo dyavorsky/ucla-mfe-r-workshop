@@ -12,6 +12,7 @@
 
     My_result91 <- x * y
     My_result91
+    my_result91 # error - R is case sensitive!
 
 # mode / typeof / class / structure
     mode("me")
@@ -173,6 +174,18 @@
     x[30:40] <- NA
     mean(x)
     mean(x, na.rm=TRUE)
+
+# pesudo random numbers
+    hist(rnorm(1000))
+    hist(rnorm(1000, mean=10, sd=0.5))
+    hist(rnorm(10))
+
+    rnorm(3)
+    set.seed(1234)
+    rnorm(3)
+    set.seed(1234)
+    rnorm(3)
+
 
     
     

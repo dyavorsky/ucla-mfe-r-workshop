@@ -96,13 +96,13 @@
     
     
 #3. Write code to generate a general matrix (i.e., of any dimension n × n) that follows this pattern
-          [,1] [,2] [,3] [,4] [,5] [,6]
-    [1,]    2    3    4    5    6    7
-    [2,]    3    4    5    6    7    8
-    [3,]    4    5    6    7    8    9
-    [4,]    5    6    7    8    9   10
-    [5,]    6    7    8    9   10   11
-    [6,]    7    8    9   10   11   12
+    #       [,1] [,2] [,3] [,4] [,5] [,6]
+    # [1,]    2    3    4    5    6    7
+    # [2,]    3    4    5    6    7    8
+    # [3,]    4    5    6    7    8    9
+    # [4,]    5    6    7    8    9   10
+    # [5,]    6    7    8    9   10   11
+    # [6,]    7    8    9   10   11   12
     
     
     
@@ -117,23 +117,55 @@
 
 ## CHALLENGE QUESTION
 
-    # Demean each ROW of this matrix: subtract each row's mean from that row's values.
+    # Sort each ROW of this matrix into ascending order.
     set.seed(2026)
-    mat <- matrix(rnorm(50, mean=10, sd=3), nrow=10, ncol=5)
+    mat <- matrix(sample(1:99, 50), nrow=10, ncol=5)
 
-    demeaned <- apply(mat, 1, function(r) r - mean(r))
+    sorted <- apply(mat, 1, sort)
 
-    # No error. No warning. But every demeaned row should now average exactly zero:
-    round(rowMeans(demeaned), 10)
+    # No error. No warning. But the last (largest) value of each sorted row should
+    # be exactly what apply(mat, 1, max) gives us:
+    sorted[, 5]
+    apply(mat, 1, max)
 
-    #   a) Those are not zeros. Compare dim(mat) with dim(demeaned) and explain what
+    #   a) Those don't match. Compare dim(mat) with dim(sorted) and explain what
     #      apply() handed back to you.
-    #   b) round(colMeans(demeaned), 10) IS all zeros. Why does that confirm the
-    #      diagnosis rather than contradict it?
+    #   b) sorted[5, ] DOES match apply(mat, 1, max) exactly. Why does that confirm
+    #      the diagnosis rather than contradict it?
     #   c) Fix it with a single extra function call, no loop.
-    #   d) Run the column version, apply(mat, 2, function(cc) cc - mean(cc)), and
-    #      check its shape. The same bug is present in the same place -- why does
-    #      this one come out looking right? What would have to change about 'mat'
-    #      for the row version to also come out looking right, and why is that the
-    #      most dangerous case of all?
-    #   e) Do the row version without apply(), using only rowMeans() and recycling.
+    #   d) Run the column version, apply(mat, 2, sort), and check its shape. The
+    #      same bug is present in the same place -- why does this one come out
+    #      looking right? What would have to change about 'mat' for the row version
+    #      to also come out looking right, and why is that the most dangerous case
+    #      of all?
+    #   e) Now a second example, with no apply() involved at all.
+    #
+    #      To "demean" a row is to subtract that row's own mean from every value in
+    #      it, so the row averages to zero afterward. Demeaning a column is the same
+    #      idea. Run both of these:
+
+    rowdm <- mat - rowMeans(mat)
+    coldm <- mat - colMeans(mat)
+
+    #      Both lines run clean. No error, no warning, no complaint of any kind.
+    #      Now check each result against the thing it was supposed to zero out:
+
+    round(rowMeans(rowdm), 10)
+    round(colMeans(coldm), 10)
+
+    #      The row version is all zeros. The column version is not, and R never
+    #      said a word about it. To work out why, you need three numbers and one
+    #      fact from earlier in this script:
+
+    length(rowMeans(mat))
+    length(colMeans(mat))
+    nrow(mat)
+
+    #      The fact is the very first thing we did today -- matrix(1:50, 10, 5)
+    #      and matrix(1:50, 10, 5, byrow=T) fill the cells in different orders,
+    #      and only one of those is what R does by default. Recycling follows that
+    #      same default order.
+    #
+    #      So: for each of the two subtractions, say which value got subtracted
+    #      from which cell, and why that lines up correctly in one case and
+    #      scrambles in the other. Then fix the incorrect version.
