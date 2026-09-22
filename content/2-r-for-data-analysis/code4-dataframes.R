@@ -100,6 +100,8 @@
     order(df1$col2)
 
     df1[order(df1$col2), ]
+    df1
+    
     df1 <- df1[order(df1$col2), ]
     df1
     
@@ -108,7 +110,7 @@
     df1 <- df1[ , new_ord]
     df1
 
-# summarizing (collapsing / aggregating) a dataframe
+# summarizing (collapsing / aggregating / split-apply-combine)
     set.seed(9898)
     df <- data.frame(
         ints = sample(1:100, 100, T),
@@ -186,11 +188,16 @@
     
     
     # save one or more objects into a RData file
-    save(obj1, obj2, file="path/to/file/filename.RData")
+    # save(obj1, obj2, file="path/to/file/filename.RData")
+    
+    save(df1, df2, "robjs.RData")
     
     # read those R objects back in (they will already be named)
-    load("path/to/file/filename.RData") 
+    # load("path/to/file/filename.RData") 
     
+    load("robjs.RData")  # <-- note no assignment here (ie, no =, no <-)
+
+        
     
     
 ## PRACTICE QUESTIONS
@@ -284,8 +291,8 @@
     #      exactly which rows contributed the extra 500.
     #   c) Note that the duplicate rows in 'reference' are IDENTICAL -- no
     #      conflicting price, nothing to spot by eye. Write one line that would
-    #      have caught the problem before the merge. (Hint: duplicated(), or
-    #      compare nrow() before and after.)
-    #   d) Fix it without editing 'trades' and without deleting rows by hand.
-    #   e) A left join (all.x=TRUE) does NOT protect you here. Show that, and say
-    #      in one sentence what all.x actually guarantees and what it does not.
+    #      have caught the problem before the merge. (Hint: length(unique()),
+    #      anyDuplicated(), or compare nrow() before and after.)
+    #   d) Fix it without editing 'trades' and without deleting rows by hand,
+    #      but you may delete rows programmatically with, eg, anyDuplicated()
+

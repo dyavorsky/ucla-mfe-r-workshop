@@ -173,5 +173,5 @@ library(data.table)
     #      The function returned NULL. You assigned its result to nothing. Explain
     #      why dt2 changed anyway, and how you would write add_flag() so that it
     #      does NOT modify its caller's table.
-    #   e) Which of these two behaviours would bite you harder in a loop that
+    #   e) Which of these two behaviors would bite you harder in a loop that
     #      builds up results one table at a time? Sketch the failure.
