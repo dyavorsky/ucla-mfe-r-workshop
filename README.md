@@ -1,6 +1,4 @@
-### MFE 2025
-
-# **R**  Workshop
+# MFE **R**  Workshop
 
 Hi MFEs!
 

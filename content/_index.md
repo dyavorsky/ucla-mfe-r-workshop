@@ -4,10 +4,7 @@ weight = 0
 
 +++
 
-# **R**  Workshop  
-
-# MFE 2025
-
+# MFE **R**  Workshop
 
 Hi MFEs!
 
