@@ -74,39 +74,3 @@ All of this information (and much more) is available on the Quarto [website](htt
 
 
 
-## Challenge Question
-
-The two chunks below are supposed to report the average fuel economy of
-**4-cylinder** cars. This document renders with no error and no warning, and the
-sentence underneath them prints a number that is simply wrong.
-
-```{r}
-data(mtcars)
-avg_mpg <- mean(mtcars$mpg)
-```
-
-```{r}
-#| eval: false
-mtcars <- subset(mtcars, cyl == 4)
-avg_mpg <- mean(mtcars$mpg)
-```
-
-The average mpg of 4-cylinder cars is `r round(avg_mpg, 2)`.
-
-a)  Render the document. What number appears in the sentence above, and what
-    should it be?
-
-b)  Which chunk option caused it? Explain why nothing in the rendered output
-    hints that a chunk was skipped.
-
-c)  Running these chunks one at a time in the console will not reveal the
-    problem, and neither will re-rendering. Explain why, then name the habit
-    that does catch it.
-
-d)  Fix it twice. First by changing the chunk option. Then a second way, by
-    rewriting the sentence so that the prose cannot drift out of sync with the
-    data even if someone edits the chunks later.
-
-e)  This is the failure mode that makes a rendered report dangerous rather than
-    merely wrong: the document looks finished. In two sentences, describe what
-    you would check before sending a rendered PDF to someone who will act on it.
