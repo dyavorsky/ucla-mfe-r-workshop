@@ -202,7 +202,7 @@
     #   b) Explain, using the scoping rules from example 4 above, why the function
     #      ran at all instead of erroring.
     #   c) Run rm(x), then call standardize(a) again. You now get an error. Argue
-    #      that the error is the BETTER outcome, in one sentence.
+    #      that the error is the BETTER outcome.
     #   d) standardize() is deterministic and returns the same wrong answer every
     #      time, so re-running it proves nothing. Describe the check that would
     #      actually have caught this, and explain why running your script top to

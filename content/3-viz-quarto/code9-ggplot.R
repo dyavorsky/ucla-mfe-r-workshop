@@ -106,10 +106,9 @@ ggplot(mtcars) +
     #      Report that overall slope, and the slope of each line on the plot.
     #   c) Move ONE argument to get a single overall line while keeping the points
     #      coloured. Which argument, and where does it go?
-    #   d) The overall slope is about -5.3. Two of the three per-cylinder slopes
-    #      are about -2.2 and -2.8, roughly half as steep. So "weight costs you
-    #      about 5.3 mpg per 1000 lbs" and "within the 6- and 8-cylinder cars,
-    #      weight costs you only about 2 to 3" are both true of the
+    #   d) Two of the three per-cylinder slopes are less than half the overall
+    #      slope. So "weight costs you about 5.3 mpg per 1000 lbs" and "within a
+    #      cylinder class, weight costs you about 2.2 to 2.8" are both true of the
     #      same 32 cars. Explain how, and name what the cylinder count is doing in
     #      that comparison.
     #   e) You are asked: "does weight hurt fuel economy, and by how much?" Which
